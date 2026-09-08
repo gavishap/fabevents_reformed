@@ -1,0 +1,2 @@
+# Store every file byte-for-byte; never convert line endings on commit/checkout.
+* -text

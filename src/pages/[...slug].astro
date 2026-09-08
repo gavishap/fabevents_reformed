@@ -1,0 +1,18 @@
+---
+import Site from '../layouts/Site.astro';
+import { loadPages, loadPage } from '../lib/site';
+
+export function getStaticPaths() {
+  return loadPages()
+    .filter((p) => p.type !== '404')
+    .map((p) => ({
+      params: { slug: p.path === '/' ? undefined : p.path.replace(/^\/|\/$/g, '') },
+      props: { name: p.name },
+    }));
+}
+
+const { name } = Astro.props as { name: string };
+const page = loadPage(name);
+---
+
+<Site meta={page.meta} head={page.head} content={page.content} tail={page.tail} />

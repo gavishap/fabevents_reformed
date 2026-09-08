@@ -1,0 +1,8 @@
+---
+import Site from '../layouts/Site.astro';
+import { loadPage } from '../lib/site';
+
+const page = loadPage('404');
+---
+
+<Site meta={page.meta} head={page.head} content={page.content} tail={page.tail} />

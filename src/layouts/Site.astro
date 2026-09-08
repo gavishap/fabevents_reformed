@@ -1,0 +1,34 @@
+---
+/**
+ * Page shell: the captured <head>, shared header/footer templates, page content
+ * and the page's script tail. Markup is Elementor's rendered output, kept verbatim.
+ */
+import { loadLayout, fillOrigin, type PageMeta } from '../lib/site';
+import { applyActiveState } from '../lib/nav';
+
+interface Props {
+  meta: PageMeta;
+  head: string;
+  content: string;
+  tail: string;
+}
+
+const { meta, head, content, tail } = Astro.props;
+const origin = Astro.site ? Astro.site.origin : 'https://fabeventsisrael.com';
+const layout = loadLayout();
+const fill = (html: string) => fillOrigin(html, origin);
+const header = fill(applyActiveState(layout.header, meta));
+---
+
+<html lang={meta.htmlLang}>
+<head>
+<Fragment set:html={fill(head)} />
+</head>
+<body class={meta.bodyClass}>
+<Fragment set:html={layout.before} />
+<Fragment set:html={header} />
+<Fragment set:html={fill(content)} />
+<Fragment set:html={fill(layout.footer)} />
+<Fragment set:html={fill(tail)} />
+</body>
+</html>

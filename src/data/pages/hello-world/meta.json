@@ -1,0 +1,10 @@
+{
+  "name": "hello-world",
+  "path": "/hello-world/",
+  "wpId": 1,
+  "type": "post",
+  "title": "Hello world! – FAB Events Israel by Risa",
+  "htmlLang": "en-US",
+  "bodyClass": "wp-singular post-template-default single single-post postid-1 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-9",
+  "status": 200
+}

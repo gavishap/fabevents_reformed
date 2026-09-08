@@ -1,0 +1,18 @@
+{
+  "name": "fabeventsisrael-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static build of fabeventsisrael.com (Astro). Content captured from the WordPress/Elementor site.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "capture": "node scripts/capture.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.13.0",
+    "@astrojs/sitemap": "^3.4.0",
+    "cheerio": "^1.1.0"
+  }
+}
