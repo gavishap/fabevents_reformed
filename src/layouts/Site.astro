@@ -25,11 +25,12 @@ const header = fill(applyActiveState(layout.header, meta));
 <Fragment set:html={fill(head)} />
 <link rel="stylesheet" href="/custom.css" />
 </head>
-<body class={meta.bodyClass}>
+<body class={meta.bodyClass} data-editor-page={meta.name}>
 <Fragment set:html={layout.before} />
 <Fragment set:html={header} />
 <Fragment set:html={fill(content)} />
 <Fragment set:html={fill(layout.footer)} />
 <Fragment set:html={fill(tail)} />
+<script is:inline src="/editor.js"></script>
 </body>
 </html>

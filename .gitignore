@@ -1,4 +1,6 @@
 node_modules/
+.tools/
+.local-editor-history/
 dist/
 .astro/
 .vercel/

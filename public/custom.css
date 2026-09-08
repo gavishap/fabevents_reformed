@@ -12,3 +12,56 @@
     public/assets/uploads/elementor/css/post-9.css (the Elementor "kit").
   - Keep this file organised: one commented block per change.
 */
+
+/* Smart Value Associate Coordinator service card */
+.page-id-118 .fab-smart-value-card {
+  position: relative;
+}
+
+.page-id-118 .fab-smart-value-card .fab-career-starburst {
+  width: min(100%, 15rem);
+  margin: 1.35rem auto;
+  padding: 1.75rem 1.15rem;
+  color: #4b2742;
+  background: #f8d774;
+  clip-path: polygon(50% 0%, 59% 12%, 73% 4%, 78% 19%, 94% 16%, 88% 32%, 100% 42%, 86% 50%, 97% 61%, 80% 65%, 83% 82%, 67% 76%, 58% 92%, 49% 79%, 37% 95%, 31% 78%, 15% 85%, 18% 68%, 2% 59%, 15% 49%, 3% 37%, 19% 31%, 13% 15%, 30% 20%, 38% 4%);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.page-id-118 .fab-smart-value-card .fab-career-starburst span {
+  display: block;
+  margin-top: .65rem;
+  font-size: .82em;
+  font-weight: 500;
+}
+
+/* Keep the FAB logo above scrolling content and make it more prominent. */
+.elementor-location-header,
+.elementor-location-header .elementor-element-7be48f1d {
+  position: relative;
+  z-index: 999998 !important;
+  isolation: isolate;
+}
+
+.elementor-location-header .elementor-sticky--active {
+  z-index: 999998 !important;
+  isolation: isolate;
+}
+
+.elementor-location-header .elementor-element-da14418 {
+  position: relative;
+  z-index: 999999;
+}
+
+.elementor-21 .elementor-element.elementor-element-da14418 img {
+  width: 80%;
+  max-width: 360px;
+}
+
+@media (max-width: 767px) {
+  .elementor-21 .elementor-element.elementor-element-da14418 img {
+    width: 165px;
+  }
+}
