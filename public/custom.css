@@ -1,0 +1,14 @@
+/*
+  custom.css — the place for all look-and-feel changes.
+
+  This stylesheet is loaded LAST on every page, after the original theme and
+  Elementor styles, so any rule here overrides the original design without
+  editing the captured files under public/assets.
+
+  Tips
+  - Target one page with its body class:  .page-id-13 { ... }   (home)
+    Page ids are in src/data/pages/<page>/meta.json ("wpId").
+  - Original global colours / fonts live in
+    public/assets/uploads/elementor/css/post-9.css (the Elementor "kit").
+  - Keep this file organised: one commented block per change.
+*/

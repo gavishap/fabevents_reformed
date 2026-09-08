@@ -5,3 +5,6 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Claude Code per-user settings
+.claude/settings.local.json

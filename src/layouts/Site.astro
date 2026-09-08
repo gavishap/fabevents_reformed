@@ -23,6 +23,7 @@ const header = fill(applyActiveState(layout.header, meta));
 <html lang={meta.htmlLang}>
 <head>
 <Fragment set:html={fill(head)} />
+<link rel="stylesheet" href="/custom.css" />
 </head>
 <body class={meta.bodyClass}>
 <Fragment set:html={layout.before} />
