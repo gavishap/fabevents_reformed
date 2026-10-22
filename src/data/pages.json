@@ -54,7 +54,7 @@
     "path": "/day-of-the-event-coordinator/",
     "wpId": 492,
     "type": "page",
-    "title": "“Day of the Event“ Coordinator – FAB Events Israel by Risa",
+    "title": "Day-of-the-Event Coordinator – FAB Events Israel by Risa",
     "htmlLang": "en-US",
     "bodyClass": "wp-singular page-template page-template-elementor_header_footer page page-id-492 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-492",
     "status": 200
@@ -64,7 +64,7 @@
     "path": "/fab-signature-celebration-packages/",
     "wpId": 478,
     "type": "page",
-    "title": "FAB Signature Celebration Packages – FAB Events Israel by Risa",
+    "title": "Full-Service Planning – FAB Events Israel by Risa",
     "htmlLang": "en-US",
     "bodyClass": "wp-singular page-template page-template-elementor_header_footer page page-id-478 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-478",
     "status": 200
@@ -120,13 +120,33 @@
     "status": 200
   },
   {
-    "name": "virtual-events",
-    "path": "/virtual-events/",
-    "wpId": 483,
+    "name": "baby-celebrations",
+    "path": "/baby-celebrations/",
+    "wpId": null,
     "type": "page",
-    "title": "Virtual Events – FAB Events Israel by Risa",
+    "title": "Baby Celebrations – FAB Events Israel by Risa",
     "htmlLang": "en-US",
-    "bodyClass": "wp-singular page-template page-template-elementor_header_footer page page-id-483 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-483",
+    "bodyClass": "wp-singular page-template page-template-elementor_header_footer page fab-service-detail-page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-9",
+    "status": 200
+  },
+  {
+    "name": "community-corporate-events",
+    "path": "/community-corporate-events/",
+    "wpId": null,
+    "type": "page",
+    "title": "Community and Corporate Events – FAB Events Israel by Risa",
+    "htmlLang": "en-US",
+    "bodyClass": "wp-singular page-template page-template-elementor_header_footer page fab-service-detail-page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-9",
+    "status": 200
+  },
+  {
+    "name": "private-parties-israeli-experiences",
+    "path": "/private-parties-israeli-experiences/",
+    "wpId": null,
+    "type": "page",
+    "title": "Private Parties and Israeli Experiences – FAB Events Israel by Risa",
+    "htmlLang": "en-US",
+    "bodyClass": "wp-singular page-template page-template-elementor_header_footer page fab-service-detail-page wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-9",
     "status": 200
   },
   {

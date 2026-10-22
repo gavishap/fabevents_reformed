@@ -1,0 +1,24 @@
+<aside class="fab-news-ticker" id="contact-opportunities" aria-label="FAB Events newsflash">
+  <strong class="fab-ticker-label">NEWSFLASH</strong>
+  <div class="fab-ticker-window">
+    <div class="fab-ticker-track">
+      {[0, 1].map(copy => <div class="fab-ticker-message" aria-hidden={copy === 1 ? 'true' : undefined}>
+        <a href="/contact-us/" tabindex={copy === 1 ? -1 : undefined}><strong>SMART VALUE: ASSOCIATE COORDINATOR</strong> — With Risa’s supervision. Full expertise, oversight, and quality control at a reduced rate.</a>
+        <span class="fab-ticker-star">✦</span>
+        <a href="/idf-base-celebrations/" tabindex={copy === 1 ? -1 : undefined}><strong>EXCLUSIVE OPPORTUNITY: YOUR CELEBRATION ON AN IDF BASE</strong> — A meaningful Israeli experience, exclusively with FAB Events by Risa.</a>
+        <span class="fab-ticker-star">✦</span>
+      </div>)}
+    </div>
+  </div>
+  <button type="button" class="fab-ticker-pause" aria-label="Pause newsflash" aria-pressed="false">Ⅱ</button>
+</aside>
+<script>
+  const ticker = document.querySelector<HTMLElement>('.fab-news-ticker');
+  const button = ticker?.querySelector<HTMLButtonElement>('button');
+  button?.addEventListener('click', () => {
+    const paused = ticker!.classList.toggle('is-paused');
+    button.setAttribute('aria-pressed', String(paused));
+    button.setAttribute('aria-label', paused ? 'Play newsflash' : 'Pause newsflash');
+    button.textContent = paused ? '▶' : 'Ⅱ';
+  });
+</script>

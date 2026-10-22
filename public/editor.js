@@ -26,12 +26,12 @@
 
   const isEditorText = (node) => {
     const parent = node.parentElement;
-    return node.nodeValue.trim() && parent && !parent.closest('header, script, style, noscript, textarea, #fab-editor-toolbar, .dev-toolbar-root');
+    return node.nodeValue.trim() && parent && !parent.closest('header, script, style, noscript, textarea, #fab-editor-toolbar, .dev-toolbar-root, [data-source-page]');
   };
 
   // The site header remains navigation, not editable content. Keep edit mode
   // switched on when its internal links take the owner to another page.
-  document.querySelectorAll('header a[href]').forEach((link) => {
+  document.querySelectorAll('header a[href], .fab-page-divider a[href]').forEach((link) => {
     const destination = new URL(link.getAttribute('href'), window.location.origin);
     if (destination.origin !== window.location.origin) return;
     destination.searchParams.set('edit', '1');

@@ -1,6 +1,7 @@
 ---
 import Site from '../layouts/Site.astro';
 import { loadPages, loadPage } from '../lib/site';
+import { continuousHome } from '../lib/continuous-home';
 
 export function getStaticPaths() {
   return loadPages()
@@ -13,6 +14,11 @@ export function getStaticPaths() {
 
 const { name } = Astro.props as { name: string };
 const page = loadPage(name);
+if (name === 'home') {
+  const continuation = continuousHome();
+  page.content += continuation.content;
+  page.head += continuation.styles;
+}
 ---
 
 <Site meta={page.meta} head={page.head} content={page.content} tail={page.tail} />
