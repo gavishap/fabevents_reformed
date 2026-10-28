@@ -1340,14 +1340,14 @@ body .elementor-icon-box-description { text-transform: none !important; }
 .fab-smart-home span,.fab-smart-home strong { min-width:0; flex:initial; }
 .fab-smart-home .fab-duo-team > span { flex:1; }
 /* Keep portraits supportive, with the service stories following the introduction. */
-.fab-meet-compact img[src*="Risa-Working"] { width:100%!important; max-width:300px!important; max-height:340px; object-fit:cover; border-radius:24px; }
+.fab-meet-compact img:is([src*="Risa-Working"],[data-original-src*="Risa-Working"]) { width:100%!important; max-width:300px!important; max-height:340px; object-fit:cover; border-radius:24px; }
 .fab-meet-compact .elementor-widget-image { text-align:center; }
 .fab-meet-compact > .elementor-container { align-items:center; }
 .fab-review-grid figure { grid-template-columns:96px minmax(0,1fr); }
 .fab-event-photo { width:96px; max-width:100%; align-self:start; }
 .elementor-testimonial__image img { width:76px!important; height:76px!important; object-fit:cover; border-radius:50%; }
 .fab-why-image img { width:100%; max-width:340px; max-height:340px; object-fit:cover; border-radius:24px; }
-@media(max-width:600px){.fab-review-grid figure{grid-template-columns:64px minmax(0,1fr);}.fab-event-photo{width:64px;}.fab-meet-compact img[src*="Risa-Working"]{max-width:230px!important;}}
+@media(max-width:600px){.fab-review-grid figure{grid-template-columns:64px minmax(0,1fr);}.fab-event-photo{width:64px;}.fab-meet-compact img:is([src*="Risa-Working"],[data-original-src*="Risa-Working"]){max-width:230px!important;}}
 /* A personal album of real celebrations. */
 .fab-why-section { background:linear-gradient(120deg,#fff9ed,#f4eaf8)!important; padding:64px 24px!important; }
 .fab-scrapbook-heading { max-width:760px; margin-bottom:38px; }
@@ -1545,7 +1545,7 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 .fab-army-benefits article > p { color:#354238; font-size:16px; line-height:1.7; margin:0 0 18px; }
 .fab-army-benefits article > strong { display:block; color:#194c91; font-size:15px; line-height:1.6; padding-top:14px; border-top:1px solid #c3ceb5; }
 @media(max-width:650px){.fab-army-benefits{grid-template-columns:1fr;}.fab-army-benefits article{padding:22px;}}
-.fab-service-hero img[src$="baby-family.png"] { height:auto!important; max-height:650px; width:100%; object-fit:contain!important; }
+.fab-service-hero img:is([src$="baby-family.png"],[data-original-src$="baby-family.png"]) { height:auto!important; max-height:650px; width:100%; object-fit:contain!important; }
 .fab-mitzvah-photo-memory { padding:32px 24px; }
 .fab-mitzvah-photo-memory figure { position:relative; max-width:480px; margin:0 auto; padding:12px; background:#fffaf0; border:1px solid #d8bd80; transform:rotate(-2deg); box-shadow:4px 6px 18px #53246218; }
 .fab-mitzvah-photo-memory figure::before { content:""; position:absolute; width:70px; height:22px; left:calc(50% - 35px); top:-10px; background:#d5b46e88; }
@@ -1749,7 +1749,7 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 .fab-mitzvah-photo-memory figure { width:100%; max-width:none; }
 .fab-mitzvah-photo-memory figure:nth-child(2) { transform:rotate(2deg); }
 .fab-mitzvah-photo-memory img { width:100%; height:380px; object-fit:cover; }
-.fab-mitzvah-photo-memory img[src$='bar-mitzvah-tefillin-credit.jpg'],.fab-hero-slide img[src$='bar-mitzvah-tefillin-credit.jpg'] { object-fit:contain; background:#fffdf8; }
+.fab-mitzvah-photo-memory img:is([src$='bar-mitzvah-tefillin-credit.jpg'],[data-original-src$='bar-mitzvah-tefillin-credit.jpg']),.fab-hero-slide img:is([src$='bar-mitzvah-tefillin-credit.jpg'],[data-original-src$='bar-mitzvah-tefillin-credit.jpg']) { object-fit:contain; background:#fffdf8; }
 .fab-mitzvah-photo-memory figcaption { padding:15px 5px 5px; font-size:14px; text-align:center; color:#622679; }
 .fab-mitzvah-details-photos { width:100%; padding:25px 24px 45px; }
 .fab-mitzvah-details-photos .fab-event-photo-grid { grid-template-columns:1fr 1fr; max-width:1000px; margin:auto; }
@@ -2068,8 +2068,8 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 /* Client-requested photo framing and ordered recommendations. */
 .fab-hero-track .fab-hero-slide{flex:0 0 clamp(310px,43vw,580px)!important;width:clamp(310px,43vw,580px)!important;overflow:hidden!important;}
 .fab-hero-track .fab-hero-slide img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center;}
-.fab-hero-slide img[src*="jerusalem-rooftop"]{object-position:55% center;}
-.fab-hero-slide img[src*="baby-celebration"]{object-position:left center;}
+.fab-hero-slide img:is([src*="jerusalem-rooftop"],[data-original-src*="jerusalem-rooftop"]){object-position:55% center;}
+.fab-hero-slide img:is([src*="baby-celebration"],[data-original-src*="baby-celebration"]){object-position:left center;}
 .fab-base-slide img{object-position:53% center!important;}
 .fab-ordered-reviews{max-width:1180px;margin:45px auto;padding:0 24px;display:grid;gap:32px;}
 .fab-ordered-reviews .fab-full-client-review{margin:0!important;width:100%!important;grid-template-columns:minmax(180px,300px) minmax(0,1fr)!important;}
@@ -2136,13 +2136,13 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 .fab-places-section{padding:30px 24px!important;}.fab-travel-layout{gap:30px!important;align-items:center!important;}.fab-travel-layout h2{font-size:40px!important;}.fab-travel-callout{padding:16px 30px!important;margin:12px 0!important;min-height:0!important;}.fab-airplane-label{max-height:100px!important;}.fab-airplane-label svg{max-height:100px!important;}.fab-route-diagram{padding:20px!important;}.fab-route-diagram svg{max-height:350px!important;}.fab-travel-callout strong{font-size:24px!important;}.fab-travel-lead{font-size:16px!important;}
 @media(max-width:700px){.fab-coordination-list{grid-template-columns:1fr!important;}.fab-full-service-wedding .elementor-col-66{width:100%!important;}.fab-full-service-wedding>.elementor-container{margin:0!important;width:100%!important;}.fab-insider-intro{padding:0 20px;}.fab-insider-intro br{display:none;}.fab-travel-layout h2{font-size:32px!important;}.fab-benefit-details .fab-benefit-photo{min-height:320px!important;}.fab-risa-blue-frame{height:280px;}}
 /* Preserve the entire wine photograph in the homepage carousel. */
-.fab-hero-track .fab-hero-slide:has(img[src="/images/wine-for-two.jpg"]){background:#211b20;}
-.fab-hero-track .fab-hero-slide img[src="/images/wine-for-two.jpg"]{object-fit:contain!important;object-position:center!important;}
-.fab-hero-track .fab-hero-slide:has(img[src="/images/floral-chuppah-view.jpg"]){background:#f3eee4;}
-.fab-hero-track .fab-hero-slide img[src="/images/floral-chuppah-view.jpg"]{object-fit:contain!important;object-position:center!important;}
+.fab-hero-track .fab-hero-slide:has(img:is([src="/images/wine-for-two.jpg"],[data-original-src="/images/wine-for-two.jpg"])){background:#211b20;}
+.fab-hero-track .fab-hero-slide img:is([src="/images/wine-for-two.jpg"],[data-original-src="/images/wine-for-two.jpg"]){object-fit:contain!important;object-position:center!important;}
+.fab-hero-track .fab-hero-slide:has(img:is([src="/images/floral-chuppah-view.jpg"],[data-original-src="/images/floral-chuppah-view.jpg"])){background:#f3eee4;}
+.fab-hero-track .fab-hero-slide img:is([src="/images/floral-chuppah-view.jpg"],[data-original-src="/images/floral-chuppah-view.jpg"]){object-fit:contain!important;object-position:center!important;}
 /* Audit corrections: complete baby-party context and a flush tefillin photo. */
-.fab-hero-track .fab-hero-slide img[src="/images/baby-celebration-blue-balloons.jpg"]{object-fit:contain!important;object-position:center!important;}
-.fab-hero-track .fab-hero-slide:has(img[src="/images/baby-celebration-blue-balloons.jpg"]){background:#eee9e1;}
+.fab-hero-track .fab-hero-slide img:is([src="/images/baby-celebration-blue-balloons.jpg"],[data-original-src="/images/baby-celebration-blue-balloons.jpg"]){object-fit:contain!important;object-position:center!important;}
+.fab-hero-track .fab-hero-slide:has(img:is([src="/images/baby-celebration-blue-balloons.jpg"],[data-original-src="/images/baby-celebration-blue-balloons.jpg"])){background:#eee9e1;}
 .fab-tefillin-frame svg{display:block!important;width:100%!important;height:100%!important;overflow:hidden;}
 .fab-service-circle .fab-tefillin-frame{height:260px;flex:none;}
 .fab-benefit-details .fab-benefit-photo:first-child{min-height:400px!important;background-image:linear-gradient(0deg,#160f1a 0%,#160f1af5 35%,transparent 70%),var(--benefit-photo)!important;background-size:cover,auto 300px!important;background-position:center,center -30px!important;background-repeat:no-repeat!important;background-color:#160f1a!important;padding-top:195px!important;}
@@ -2209,7 +2209,7 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 .fab-coordination-list .fab-coordination-offer{grid-column:1/-1!important;display:grid;grid-template-columns:1fr 1.7fr;gap:8px 24px;align-items:center;padding:24px!important;}.fab-coordination-offer .fab-news-label{margin:0!important;}.fab-coordination-offer h3{margin:0!important;}.fab-coordination-offer a{grid-column:2;}
 .fab-baby-full-photo{max-width:1280px!important;margin:15px auto 40px!important;padding:0 20px!important;}.fab-baby-full-photo img{display:block;height:auto!important;max-height:none!important;}
 .fab-baby-scrapbook .fab-event-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;align-items:start!important;}.fab-baby-scrapbook .fab-candy-position{grid-column:3!important;margin-top:-35px!important;}
-.fab-community-four .risa-community-speaking svg{display:block;width:100%;height:100%;}.fab-community-events-added{grid-template-columns:minmax(220px,.7fr) minmax(0,1.6fr)!important;}.fab-community-events-added img[src*="chabad-rechavia"]{width:100%!important;max-height:none!important;}
+.fab-community-four .risa-community-speaking svg{display:block;width:100%;height:100%;}.fab-community-events-added{grid-template-columns:minmax(220px,.7fr) minmax(0,1.6fr)!important;}.fab-community-events-added img:is([src*="chabad-rechavia"],[data-original-src*="chabad-rechavia"]){width:100%!important;max-height:none!important;}
 .fab-partner-logos{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;}
 .fab-settings-intro{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;}.fab-settings-intro .fab-columns-banquet{margin:0;max-width:540px;}.fab-settings-intro h2{text-align:left!important;}
 .fab-value-list li,.fab-review-themes li{font-size:20px!important;line-height:1.5!important;}
@@ -2220,7 +2220,7 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 .fab-full-service-wedding>.elementor-background-overlay{opacity:.12!important;}.fab-full-service-wedding h1{color:#ffb9ce!important;text-shadow:0 2px 4px #25142f!important;}
 .fab-baby-scrapbook .fab-event-photo-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:30px!important;align-items:center!important;}.fab-baby-scrapbook .fab-event-photo-grid figure{margin:0!important;grid-column:auto!important;transform:rotate(-2deg);}.fab-baby-scrapbook .fab-event-photo-grid figure:nth-child(even){transform:rotate(2deg);}.fab-baby-scrapbook .fab-event-photo-grid figure:first-child{grid-column:1/-1!important;max-width:900px;width:100%;justify-self:center;}.fab-baby-scrapbook .fab-candy-position{grid-column:2!important;}.fab-baby-scrapbook .fab-event-photo-grid>figure>img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;}
 .fab-community-cluster{grid-template-columns:1.5fr 1fr!important;gap:20px!important;align-items:center!important;}.fab-community-cluster figure{margin:0!important;transform:rotate(-1deg)!important;}.fab-community-cluster .fab-community-swag{grid-column:2;grid-row:1/3;transform:rotate(2deg)!important;}.fab-community-cluster .fab-community-bags{grid-column:1;grid-row:2;width:50%;justify-self:center;transform:rotate(-3deg)!important;}.fab-community-cluster img{height:auto!important;object-fit:contain!important;}
-.fab-partner-logos img[src*="bridge-project"]{background:white!important;width:100%!important;height:145px!important;object-fit:contain!important;}
+.fab-partner-logos img:is([src*="bridge-project"],[data-original-src*="bridge-project"]){background:white!important;width:100%!important;height:145px!important;object-fit:contain!important;}
 @media(max-width:600px){.fab-community-cluster{grid-template-columns:1fr!important;}.fab-community-cluster .fab-community-swag{grid-column:1;grid-row:2;}.fab-community-cluster .fab-community-bags{grid-row:3;}}
 .fab-baby-scrapbook .fab-event-photo-grid .fab-candy-position{grid-column:auto!important;}
 /* October 12: owner-supplied event and press photographs. */
@@ -2339,3 +2339,46 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 .fab-planning-love .fab-love-highlight{color:#49334f!important;background:#ffe9a1!important;}
 /* Keep the service dropdown within the phone viewport. */
 @media(max-width:600px){.fab-services-dropdown .fab-dropdown-links{position:fixed!important;left:12px!important;right:12px!important;top:110px!important;width:auto!important;max-width:none!important;max-height:calc(100dvh - 130px);overflow-y:auto;box-sizing:border-box;z-index:1000;}.fab-dropdown-links a{white-space:normal!important;overflow-wrap:break-word;}}
+/* October 28: separate pages and a compact, readable homepage. */
+.page-id-13 .fab-refined-hero{min-height:560px!important;padding:26px clamp(20px,4vw,60px)!important;}
+.page-id-13 .fab-refined-hero .fab-hero-track .fab-hero-slide{height:560px!important;width:calc(560px * var(--photo-ratio))!important;}
+.page-id-13 .fab-refined-hero .fab-hero-brand{width:390px!important;max-height:210px!important;transform:none!important;margin:0 auto 10px!important;}
+.page-id-13 .fab-refined-hero .fab-hero-name{font-size:58px!important;line-height:1.05!important;}
+.page-id-13 .fab-guest-promise{padding:30px 22px!important;min-height:0!important;margin:0!important;}
+.page-id-13 .fab-guest-promise h2{font-size:clamp(30px,3.5vw,46px)!important;line-height:1.15!important;margin:12px 0!important;}
+.page-id-13 .fab-guest-promise .fab-guest-flourish{margin:6px!important;}
+.page-id-13 .fab-guest-promise .fab-you-celebrate{font-size:40px!important;}
+.page-id-13 .fab-choice-section,.page-id-13 .fab-home-services{padding:38px 0!important;min-height:0!important;}
+.page-id-13 .fab-choice-intro{margin-bottom:24px!important;gap:24px!important;}
+.page-id-13 .fab-choice-card{min-height:310px!important;padding:24px!important;}
+.page-id-13 .fab-choice-footer{margin-top:24px!important;padding-top:16px!important;}
+.fab-home-about-teaser{padding:34px 20px;background:#f7edf4;}
+.fab-home-about-teaser>.fab-section-shell{display:grid;grid-template-columns:1.4fr .6fr;gap:32px;align-items:center;}
+.fab-home-about-teaser h2{font:600 clamp(32px,4vw,48px)/1.12 "Cormorant Garamond",serif;color:#702681;margin:8px 0 16px;}
+.fab-home-about-teaser img{display:block;width:100%;height:auto;max-height:280px;object-fit:contain;}
+.fab-home-contact-invitation{text-align:center;padding:38px 20px;background:#fff5e6;}
+.fab-home-contact-invitation h2{font:600 clamp(30px,4vw,44px)/1.15 "Cormorant Garamond",serif;color:#702681;margin:0 0 14px;}
+.fab-home-review-link{display:block;margin:18px auto 0;color:#702681;font-weight:600;}
+.page-id-13 .fab-travel-three{align-items:stretch!important;gap:18px!important;}
+.page-id-13 .fab-travel-three>*{height:auto!important;min-height:440px!important;padding:20px!important;}
+.page-id-13 .fab-travel-three .fab-israel-callout img{height:150px!important;max-height:150px!important;}
+.page-id-13 .fab-travel-three .fab-route-diagram svg{height:220px!important;max-height:220px!important;}
+.page-id-13 .fab-destination-callout .fab-airplane-label{min-height:160px!important;margin:8px 0!important;}
+.page-id-13 .fab-destination-callout .fab-airplane-label svg{height:125px!important;}
+.page-id-13 .fab-destination-callout .fab-travel-eyebrow{font-size:36px!important;}
+.page-id-13 .fab-destination-full-collage{max-width:680px!important;margin-top:22px!important;}
+.elementor-247>.elementor-top-section:first-child{padding:28px 22px!important;min-height:0!important;}
+.elementor-247>.elementor-top-section:first-child .elementor-widget-wrap{padding:0!important;}
+.elementor-247 .fab-meet-compact{padding:28px 20px!important;min-height:0!important;background:#fff9f0;}
+.elementor-247 .fab-meet-compact>.elementor-container{display:block!important;max-width:1120px;margin:auto;}
+.elementor-247 .fab-meet-compact .fab-section-shell{width:100%;}
+.elementor-247 .fab-why-section{padding:36px 20px!important;}
+.fab-associate-service{padding:40px 20px;background:#fff8ef;font-family:"Poppins",sans-serif;color:#49334f;}
+.fab-associate-intro>img{display:block;max-width:520px;width:100%;height:auto;margin:24px auto;}
+.fab-associate-intro h1{font:600 clamp(38px,5vw,64px)/1.1 "Cormorant Garamond",serif;color:#702681;}
+.fab-associate-details{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:28px 0;}
+.fab-associate-details article{padding:20px;background:#f1e6f5;border-left:3px solid #cbaa50;}
+.fab-album-track,.fab-hero-track{scroll-behavior:auto!important;scroll-snap-type:none!important;overflow-anchor:none;}
+@media(max-width:700px){.page-id-13 .fab-refined-hero{min-height:600px!important;padding:24px 20px!important;}.page-id-13 .fab-refined-hero .fab-hero-track .fab-hero-slide{height:600px!important;width:calc(600px * var(--photo-ratio))!important;}.page-id-13 .fab-refined-hero .fab-hero-name{font-size:46px!important;}.page-id-13 .fab-refined-hero .fab-hero-brand{max-width:290px!important;}.fab-home-about-teaser>.fab-section-shell{grid-template-columns:1fr;gap:20px;}.fab-home-about-teaser img{max-height:240px;}.page-id-13 .fab-choice-section,.page-id-13 .fab-home-services{padding:28px 0!important;}.page-id-13 .fab-travel-three>*{min-height:0!important;}.elementor-247 .fab-meet-balanced{grid-template-columns:1fr!important;}.fab-associate-details{grid-template-columns:1fr;}}
+.page-id-13 .fab-guest-promise{width:100%!important;max-width:none!important;box-sizing:border-box;}
+@media(max-width:700px){.page-id-13 .fab-refined-hero::before{background:linear-gradient(90deg,#fff7ecef 0%,#fff7ecd9 55%,#fff7ec99 100%)!important;}}

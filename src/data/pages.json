@@ -158,5 +158,15 @@
     "htmlLang": "en-US",
     "bodyClass": "error404 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-9",
     "status": 404
+  },
+  {
+    "name": "associate-coordination",
+    "path": "/associate-coordination/",
+    "wpId": null,
+    "type": "page",
+    "title": "Associate Coordination – FAB Events Israel by Risa",
+    "htmlLang": "en-US",
+    "bodyClass": "fab-associate-page",
+    "status": 200
   }
 ]
