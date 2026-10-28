@@ -2401,3 +2401,47 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 .page-id-247 .fab-support-grid > .elementor-container > .elementor-column > .elementor-widget-wrap{padding:0!important;background:transparent!important;}
 .page-id-247 .fab-support-grid .elementor-widget-image-box{height:100%;margin:0!important;padding:28px 20px!important;background:#f9edf0!important;border:0!important;border-radius:12px!important;box-shadow:none!important;}
 .page-id-247 .fab-support-grid .elementor-image-box-title,.page-id-247 .fab-support-grid .elementor-image-box-description{text-transform:none!important;}
+
+/* Clear homepage promises, visible portraits, and compact introductory layouts. */
+.page-id-13 .fab-guest-promise>p:last-child{max-width:1000px!important;margin:12px auto 0!important;text-align:left!important;}
+.page-id-13 .fab-guest-promise .fab-you-celebrate{font-size:clamp(52px,6vw,74px)!important;text-align:left!important;}
+.page-id-13 .fab-guest-promise .fab-details-promise{font-size:clamp(28px,3.3vw,42px)!important;line-height:1.25!important;text-align:left!important;font-weight:600!important;}
+.page-id-13 .fab-choice-grid .fab-choice-card{padding:245px 24px 24px!important;min-height:0!important;background:#fff7ec!important;}
+.page-id-13 .fab-choice-card>.fab-role-portrait,.page-id-13 .fab-choice-card.fab-role-phone-portrait>.fab-role-portrait{inset:0 0 auto!important;top:0!important;width:100%!important;height:230px!important;object-fit:cover!important;opacity:1!important;filter:none!important;object-position:50% 25%!important;}
+.page-id-13 .fab-choice-card:nth-child(2)>.fab-role-portrait{object-position:85% 26%!important;}
+.page-id-13 .fab-choice-card:nth-child(3)>.fab-role-portrait{object-position:50% 24%!important;}
+.page-id-13 .fab-choice-card::after{background:linear-gradient(180deg,transparent 0,transparent 190px,#fff7ec 230px)!important;}
+.page-id-13 .fab-choice-card .fab-choice-icon{display:none;}
+.page-id-13 .fab-choice-card h3{font-size:32px!important;line-height:1.12!important;font-weight:700!important;color:#612778!important;min-height:2.24em;}
+.page-id-13 .fab-choice-card .fab-choice-quality{font-size:16px!important;font-weight:600!important;color:#865925!important;}
+.fab-why-section .fab-scrapbook-heading>p{font-family:'Cormorant Garamond',serif!important;font-size:clamp(30px,3.3vw,44px)!important;line-height:1.2!important;font-weight:600!important;color:#8c3757!important;max-width:880px!important;}
+.page-id-13 .fab-smart-home{display:grid!important;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr)!important;gap:12px 28px!important;padding:28px!important;text-align:left!important;}
+.page-id-13 .fab-smart-home>.fab-duo-eyebrow,.page-id-13 .fab-smart-home>h3{grid-column:2!important;margin:0!important;}
+.page-id-13 .fab-smart-home>.fab-planner-silhouette{grid-column:1!important;grid-row:1/6!important;align-self:center;width:100%!important;height:auto!important;max-height:260px!important;margin:0!important;border-radius:8px!important;padding:0!important;}
+.page-id-13 .fab-smart-home>.fab-duo-team,.page-id-13 .fab-smart-home>.fab-duo-value,.page-id-13 .fab-smart-home>.fab-duo-link{grid-column:2!important;margin:0!important;}
+.page-id-13 .fab-smart-home .fab-duo-team{justify-content:flex-start!important;gap:16px!important;}
+.page-id-13 .fab-smart-home h3{font-size:34px!important;}
+.page-id-13 .fab-smart-home .fab-duo-value{padding-top:12px!important;}
+.fab-service-hero.fab-baby-photo-hero{display:grid!important;grid-template-columns:minmax(0,1.5fr) minmax(220px,.65fr)!important;align-items:center;gap:30px;padding:28px max(24px,calc((100vw - 1160px)/2))!important;}
+.fab-baby-photo-hero .fab-service-hero-copy{text-align:left!important;max-width:none!important;margin:0!important;padding:0!important;}
+.fab-baby-photo-hero h1{font-size:clamp(36px,4vw,52px)!important;line-height:1.1!important;margin:10px 0 14px!important;}
+.fab-baby-photo-hero>img{display:block!important;width:100%!important;height:auto!important;max-height:290px!important;object-fit:contain!important;}
+.fab-ordered-reviews{gap:20px!important;margin:28px auto!important;}
+.fab-ordered-reviews .fab-full-client-review{padding:22px!important;gap:20px!important;}
+@media(max-width:700px){.page-id-13 .fab-guest-promise>p:last-child{padding:0 12px!important;}.page-id-13 .fab-choice-card h3{min-height:0;}.page-id-13 .fab-smart-home{grid-template-columns:1fr!important;padding:24px!important;}.page-id-13 .fab-smart-home>*{grid-column:1!important;grid-row:auto!important;}.page-id-13 .fab-smart-home>.fab-planner-silhouette{grid-column:1!important;grid-row:3!important;max-height:180px!important;}.fab-service-hero.fab-baby-photo-hero{grid-template-columns:minmax(0,1fr) 110px!important;gap:16px;padding:24px 18px!important;}.fab-baby-photo-hero h1{font-size:32px!important;}.fab-baby-photo-hero .fab-service-subtitle,.fab-baby-photo-hero .fab-service-hero-copy>p:last-child{font-size:16px!important;}.fab-ordered-reviews .fab-full-client-review{padding:18px!important;}}
+.page-id-13 .fab-choice-card:nth-child(3)>.fab-role-portrait{object-position:50% 44%!important;}
+.fab-associate-intro{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(220px,.7fr);column-gap:32px;align-items:center;}
+.fab-associate-intro>.fab-kicker,.fab-associate-intro>h1,.fab-associate-intro>p{grid-column:1;}
+.fab-associate-intro>h1{font-size:clamp(36px,4.3vw,56px);margin:10px 0 18px;}
+.fab-associate-intro>img{grid-column:2;grid-row:1/4;max-height:270px;object-fit:contain;margin:0;}
+.fab-associate-intro>h2,.fab-associate-intro>.fab-associate-details{grid-column:1/-1;}
+.fab-associate-intro>h2{margin:24px 0 0;}.fab-associate-details{margin:18px 0;}
+@media(max-width:700px){.fab-associate-intro{display:block;}.fab-associate-intro>img{max-height:190px;margin:16px auto;}}
+.page-id-13 .fab-smart-home{width:min(100%,960px)!important;max-width:960px!important;}
+.page-id-13 .fab-smart-home .fab-duo-team strong{font-size:18px!important;}.page-id-13 .fab-smart-home .fab-duo-team small{font-size:15px!important;line-height:1.45!important;}
+.fab-service-hero.fab-baby-photo-hero{min-height:0!important;}
+.fab-baby-photo-hero .fab-service-hero-copy{width:100%!important;box-shadow:none!important;}
+.fab-baby-photo-hero>img{min-height:0!important;min-width:0!important;margin:0 auto!important;}
+@media(max-width:700px){.fab-service-hero.fab-baby-photo-hero{display:block!important;}.fab-baby-photo-hero>img{max-height:150px!important;width:auto!important;max-width:100%!important;margin:16px auto 0!important;}.fab-baby-photo-hero h1{font-size:34px!important;}.fab-baby-photo-hero .fab-service-hero-copy>p{margin-bottom:10px!important;}}
+.fab-scrapbook-heading #fab-why-heading+p{font:600 clamp(30px,3.3vw,44px)/1.2 'Cormorant Garamond',serif!important;color:#8c3757!important;max-width:880px!important;text-align:left!important;}
+.fab-scrapbook-heading #fab-why-heading+p .fab-celebrations-line{display:inline!important;font:inherit!important;color:inherit!important;}
