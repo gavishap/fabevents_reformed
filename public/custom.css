@@ -2513,3 +2513,32 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 @media(max-width:700px){.page-id-13 .fab-refined-hero{min-height:660px!important;padding:24px 20px!important;}.page-id-13 .fab-refined-hero .fab-hero-identity{width:100%!important;max-width:460px!important;margin:auto!important;}.page-id-13 .fab-refined-hero .fab-hero-brand{max-width:320px!important;max-height:180px!important;}.page-id-13 .fab-refined-hero .fab-hero-track .fab-hero-slide{height:660px!important;width:calc(660px * var(--photo-ratio))!important;}.page-id-13 .fab-refined-hero::before{background:linear-gradient(90deg,#fff7ecef,#fff7ecd9 55%,#fff7ec99)!important;}.fab-site-header .fab-site-logo{width:220px;}.elementor-247 .fab-meet-collage{height:auto!important;min-height:0;grid-template-rows:auto!important;}.elementor-247 .fab-meet-collage>figure:first-child{grid-column:1/-1!important;grid-row:auto!important;}.elementor-247 .fab-meet-collage>figure:nth-child(2),.elementor-247 .fab-meet-collage>figure:nth-child(3){grid-column:auto!important;grid-row:auto!important;}.elementor-247 .fab-meet-collage>figure:last-child{grid-row:auto!important;max-width:none!important;}.elementor-247 .fab-meet-collage>figure:not(:first-child) img{height:auto!important;object-fit:contain!important;}.elementor-247 .fab-meet-collage .fab-risa-blue-frame{height:auto!important;}.fab-baby-scrapbook .fab-event-photo-grid .fab-candy-position{width:100%!important;}}
 @media(min-width:701px){.elementor-247 .fab-meet-collage{contain:size;min-height:0!important;}.elementor-247 .fab-meet-collage>figure:first-child{grid-column:1/-1!important;grid-row:1!important;}.elementor-247 .fab-meet-collage>figure:nth-child(2){grid-column:1!important;grid-row:2!important;}.elementor-247 .fab-meet-collage>figure:nth-child(3){grid-column:2!important;grid-row:2!important;}.elementor-247 .fab-meet-collage .fab-risa-blue-frame img{object-position:center 65%!important;}}
 .fab-baby-scrapbook .fab-event-photo-grid .fab-candy-position{align-self:end!important;}
+
+/* Elegant personal heading, richer support cards, and consistent gold photo corners. */
+.elementor-247 .fab-meet-heading h2{display:inline-block;font-family:'Great Vibes',cursive!important;font-size:clamp(64px,7vw,92px)!important;font-weight:400!important;line-height:1.15!important;color:#752c69!important;text-shadow:1px 2px 0 #ecd9a0;margin-bottom:16px!important;}
+.page-id-247 .fab-support-grid .elementor-widget-image-box{background:#e9d5ae!important;}
+.page-id-247 .fab-support-grid .elementor-image-box-title{color:#522748!important;}
+.page-id-247 .fab-support-grid .elementor-image-box-description{color:#352d30!important;}
+.fab-gold-corner-photo{position:relative;}
+.fab-gold-corner-photo::before,.fab-gold-corner-photo::after{display:none!important;}
+.fab-gold-corner-photo>.fab-photo-corner{position:absolute;width:27px;height:27px;z-index:3;pointer-events:none;background:linear-gradient(135deg,#95733d,#d2b77c);filter:drop-shadow(1px 2px 1px #49342130);}
+.fab-gold-corner-photo>.fab-corner-tl{top:0;left:0;clip-path:polygon(0 0,100% 0,0 100%);}.fab-gold-corner-photo>.fab-corner-tr{top:0;right:0;clip-path:polygon(0 0,100% 0,100% 100%);}.fab-gold-corner-photo>.fab-corner-bl{bottom:0;left:0;clip-path:polygon(0 0,0 100%,100% 100%);}.fab-gold-corner-photo>.fab-corner-br{bottom:0;right:0;clip-path:polygon(100% 0,0 100%,100% 100%);}
+.fab-why-section .fab-scrapbook-single{display:grid!important;grid-template-columns:1fr!important;gap:24px!important;align-content:start;}
+.fab-why-section .fab-scrapbook-single>figure{width:100%!important;grid-column:1!important;margin:0!important;}
+.fab-why-section .fab-scrapbook-single .fab-candle-memory{margin-top:-12px!important;transform:rotate(3deg);}
+.fab-why-section .fab-scrapbook-single .fab-candle-memory img{height:auto!important;object-fit:contain;}
+.fab-why-section .fab-scrapbook-additions{display:block;max-width:700px;margin:24px auto 0!important;}
+.fab-testimonials-section .fab-value-list{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px!important;padding:0!important;margin:0 auto!important;max-width:1080px;list-style:none!important;}
+.fab-testimonials-section .fab-value-list li{display:flex;justify-content:center;align-items:center;min-height:90px;padding:18px!important;margin:0!important;text-align:center;background:#f6e7be;color:#522748!important;border-bottom:2px solid #bc9242;font-weight:600!important;}
+.fab-testimonials-section .fab-value-list li::before{display:none!important;}
+.fab-facebook-reviews{padding-bottom:12px;}.fab-testimonials-section{padding-top:22px!important;}
+@media(max-width:700px){.fab-testimonials-section .fab-value-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px!important;}.fab-testimonials-section .fab-value-list li{font-size:17px!important;padding:14px!important;}.fab-why-section .fab-scrapbook-single .fab-candle-memory{margin-top:0!important;}}
+.fab-baby-scrapbook .fab-baby-masonry{align-items:start!important;gap:24px!important;padding-top:8px;}
+.fab-baby-masonry-column{display:flex;flex-direction:column;gap:28px;min-width:0;}
+.fab-baby-scrapbook .fab-baby-masonry-column>figure{grid-column:auto!important;width:100%!important;max-width:none!important;align-self:auto!important;margin:0!important;transform:rotate(-2deg)!important;}
+.fab-baby-scrapbook .fab-baby-masonry-column:nth-child(3)>figure{transform:rotate(2deg)!important;}
+.fab-baby-scrapbook .fab-baby-masonry-column>figure:nth-child(2){transform:rotate(1deg)!important;}
+.fab-baby-scrapbook .fab-baby-masonry-column .fab-candy-position{width:100%!important;align-self:auto!important;}
+@media(max-width:600px){.fab-baby-scrapbook .fab-baby-masonry{gap:16px!important;}.fab-baby-masonry-column{gap:20px;}.fab-baby-scrapbook .fab-baby-masonry-column>figure{padding:7px!important;}.fab-baby-scrapbook .fab-photo-corner{width:20px;height:20px;}}
+.elementor-247 .fab-meet-heading h2{display:block!important;width:fit-content;margin:0 auto 14px!important;}
+.fab-testimonials-section .fab-client-love-title{width:100%!important;max-width:none!important;}
