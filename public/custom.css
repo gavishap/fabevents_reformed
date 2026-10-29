@@ -2542,3 +2542,21 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 @media(max-width:600px){.fab-baby-scrapbook .fab-baby-masonry{gap:16px!important;}.fab-baby-masonry-column{gap:20px;}.fab-baby-scrapbook .fab-baby-masonry-column>figure{padding:7px!important;}.fab-baby-scrapbook .fab-photo-corner{width:20px;height:20px;}}
 .elementor-247 .fab-meet-heading h2{display:block!important;width:fit-content;margin:0 auto 14px!important;}
 .fab-testimonials-section .fab-client-love-title{width:100%!important;max-width:none!important;}
+
+/* Distinctive service headings and editorial press cards. */
+.fab-why-section .fab-scrapbook-additions{width:44%;max-width:none!important;margin:18px 0 0 auto!important;}
+.page-id-825 .elementor-element-18bb388c h2,.page-id-825 .elementor-element-bbb75fa h2{color:#205b83!important;font-family:'Cormorant Garamond',serif!important;font-weight:700!important;font-size:clamp(32px,3.7vw,48px)!important;line-height:1.12!important;border-bottom:2px solid #ba944b;padding-bottom:12px;}
+.page-id-401 .fab-wedding-album{width:calc(100vw - 40px)!important;max-width:none!important;margin-left:calc(50% - 50vw + 20px)!important;margin-right:0!important;padding:20px 0!important;box-sizing:border-box;}
+.elementor .elementor-element-e7a7275 .fab-approach-heading{color:#702d6c!important;text-align:center!important;margin:22px auto!important;}
+.fab-approach-heading>span{display:block;font-family:'Cormorant Garamond',serif;font-size:clamp(40px,4.7vw,62px)!important;font-weight:700;line-height:1.1;}
+.fab-approach-heading>small{display:block;margin:14px auto 0;padding-top:12px;border-top:2px solid #ba944b;color:#205b83!important;font:600 clamp(20px,2.2vw,28px)/1.35 'Poppins',sans-serif!important;text-transform:none!important;}
+.fab-service-page .fab-gold-elegant{font-family:'Cormorant Garamond',serif!important;font-style:italic!important;font-weight:600!important;color:#996b16!important;font-size:clamp(40px,4.8vw,64px)!important;line-height:1.1!important;text-shadow:0 1px 0 #f4e3a9;}
+.fab-service-page h1.fab-gold-elegant{font-size:clamp(46px,5.3vw,72px)!important;}
+.fab-press-grid article{border:2px solid #ad873a!important;border-top:6px solid #71376c!important;box-shadow:0 5px 15px #573b4a12;border-radius:3px 20px 3px 3px;}
+.fab-press-grid article:nth-child(n+3){background:#fbefcf!important;border:3px solid #71376c!important;border-top:7px solid #b48b36!important;display:flex;flex-direction:column;align-items:flex-start;gap:14px;}
+.fab-press-grid article:nth-child(n+3)>.fab-press-logo{height:80px!important;max-width:230px!important;margin:0!important;object-fit:contain;}
+.fab-press-grid article:nth-child(n+3)>p{font-size:20px!important;font-weight:700!important;color:#71376c!important;margin:0!important;}
+.fab-press-grid article:nth-child(n+3)>h3{font-size:32px!important;line-height:1.2!important;margin:0!important;}
+.fab-press-grid article:nth-child(n+3)>a{margin-top:auto;}
+.page-id-352 .elementor-element-7efbb2a2 h2{color:#205b83!important;font-family:'Cormorant Garamond',serif!important;font-size:clamp(34px,4vw,50px)!important;font-weight:600!important;}
+@media(max-width:700px){.fab-why-section .fab-scrapbook-additions{width:85%;margin:20px 0 0 auto!important;}.page-id-401 .fab-wedding-album{width:calc(100vw - 24px)!important;margin-left:calc(50% - 50vw + 12px)!important;}.fab-service-page .fab-gold-elegant{font-size:38px!important;}.fab-press-grid article:nth-child(n+3)>h3{font-size:28px!important;}}
