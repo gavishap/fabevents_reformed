@@ -58,7 +58,9 @@ document.querySelectorAll('.fab-wedding-album, .fab-event-hero-carousel').forEac
   play?.addEventListener('click', () => { playing = !playing; offset = track.scrollLeft; update(); if (playing) { preload(); start(); } else stop(); });
   prev?.addEventListener('click', () => step(-1));
   next?.addEventListener('click', () => step(1));
-  track.addEventListener('pointerdown', () => { playing = false; stop(); update(); }, {passive:true});
+  track.addEventListener('pointerdown', stop, {passive:true});
+  window.addEventListener('pointerup', start, {passive:true});
+  window.addEventListener('pointercancel', start, {passive:true});
   track.addEventListener('scroll', () => { if (!frame) offset = track.scrollLeft; }, {passive:true});
   track.addEventListener('keydown', event => {
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') { event.preventDefault(); step(event.key === 'ArrowRight' ? 1 : -1); }

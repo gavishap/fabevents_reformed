@@ -2445,3 +2445,43 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 @media(max-width:700px){.fab-service-hero.fab-baby-photo-hero{display:block!important;}.fab-baby-photo-hero>img{max-height:150px!important;width:auto!important;max-width:100%!important;margin:16px auto 0!important;}.fab-baby-photo-hero h1{font-size:34px!important;}.fab-baby-photo-hero .fab-service-hero-copy>p{margin-bottom:10px!important;}}
 .fab-scrapbook-heading #fab-why-heading+p{font:600 clamp(30px,3.3vw,44px)/1.2 'Cormorant Garamond',serif!important;color:#8c3757!important;max-width:880px!important;text-align:left!important;}
 .fab-scrapbook-heading #fab-why-heading+p .fab-celebrations-line{display:inline!important;font:inherit!important;color:inherit!important;}
+
+/* Four-photo Meet Risa collage, clearer IDF artwork, and a smaller baby scrapbook. */
+.elementor-247 .fab-meet-collage{display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)!important;gap:18px!important;align-items:stretch!important;}
+.elementor-247 .fab-meet-collage>figure{width:100%!important;max-width:none!important;margin:0!important;grid-column:2!important;transform:rotate(1deg);}
+.elementor-247 .fab-meet-collage>figure:first-child{grid-column:1!important;grid-row:1/4!important;transform:rotate(-1deg);align-self:stretch;}
+.elementor-247 .fab-meet-collage .fab-risa-blue-frame{height:100%!important;min-height:420px;}
+.elementor-247 .fab-meet-collage .fab-risa-blue-frame img{object-fit:contain!important;background:#fffaf0;min-height:0!important;}
+.elementor-247 .fab-meet-collage>figure:not(:first-child) img{display:block;min-height:0!important;height:auto!important;width:100%!important;object-fit:contain!important;}
+.elementor-247 .fab-meet-collage .fab-risa-half-crop{aspect-ratio:auto!important;overflow:visible!important;}
+.fab-army-benefits article:nth-child(n){background-image:linear-gradient(rgba(255,253,246,.58),rgba(255,253,246,.72)),var(--experience-art)!important;}
+.fab-army-benefits article p,.fab-army-benefits article strong{color:#352f2a!important;text-shadow:0 1px 3px #fff9e9;}
+.fab-baby-scrapbook .fab-event-photo-grid{max-width:960px!important;margin-inline:auto!important;gap:24px!important;}
+.fab-baby-scrapbook .fab-event-photo-grid figure:first-child{max-width:760px!important;}
+@media(max-width:700px){.elementor-247 .fab-meet-collage{grid-template-columns:repeat(2,minmax(0,1fr))!important;}.elementor-247 .fab-meet-collage>figure:first-child{grid-column:1/-1!important;grid-row:auto!important;}.elementor-247 .fab-meet-collage>figure:not(:first-child){grid-column:auto!important;}.elementor-247 .fab-meet-collage>figure:last-child{grid-column:1/-1!important;max-width:280px!important;justify-self:center;}.elementor-247 .fab-meet-collage .fab-risa-blue-frame{height:auto!important;min-height:0!important;}.elementor-247 .fab-meet-collage .fab-risa-blue-frame img{height:auto!important;max-height:400px!important;}.fab-baby-scrapbook .fab-event-photo-grid{max-width:540px!important;gap:20px!important;}}
+.page-id-825 .fab-idf-symbol-hero{padding:36px 24px!important;min-height:0!important;}
+.page-id-825 .fab-base-scrapbook{margin:22px auto!important;}
+.page-id-825 .fab-base-horizontal .elementor-widget-wrap{padding-block:18px!important;}
+.page-id-825 .fab-idf-compact-reasons{margin:18px auto!important;}
+.elementor-247 .fab-meet-balanced{align-items:start!important;}
+.elementor-247 .fab-meet-collage{align-self:start!important;}
+
+/* Full-width flowing homepage photos and consistent section alignment. */
+.page-id-13 .fab-refined-hero{display:block!important;width:100%!important;max-width:none!important;min-height:0!important;padding:20px 0 0!important;}
+.page-id-13 .fab-refined-hero::before{display:none!important;}
+.page-id-13 .fab-refined-hero .fab-hero-identity{display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;align-items:center;gap:28px;width:calc(100% - 48px)!important;max-width:1160px!important;margin:0 auto 22px!important;}
+.page-id-13 .fab-refined-hero .fab-hero-brand{width:440px!important;max-width:100%!important;max-height:235px!important;margin:0 auto!important;}
+.page-id-13 .fab-refined-hero .fab-hero-copy{text-align:center!important;}
+.page-id-13 .fab-refined-hero .fab-event-hero-carousel{position:relative!important;inset:auto!important;z-index:auto!important;width:calc(100% - 24px)!important;margin:0 12px!important;height:430px!important;min-height:0!important;}
+.page-id-13 .fab-refined-hero .fab-hero-track .fab-hero-slide{height:430px!important;width:calc(430px * var(--photo-ratio))!important;}
+.page-id-13 .fab-guest-promise{margin:20px auto 0!important;padding:30px 24px!important;}
+.page-id-13 .fab-guest-promise .fab-guest-eyebrow{width:100%!important;max-width:1000px!important;margin:0 auto 20px!important;text-align:center!important;line-height:1.5!important;font-size:clamp(20px,2.4vw,30px)!important;letter-spacing:.3px!important;}
+.page-id-13 .fab-guest-promise>p:last-child{max-width:1000px!important;padding:0!important;}
+.page-id-13 .fab-choice-heading{width:100%;max-width:1040px;margin-inline:auto;}
+.page-id-13 .fab-choice-heading #fab-choice-title{display:flex!important;justify-content:center!important;align-items:center!important;flex-wrap:wrap;gap:14px 26px!important;margin:0!important;line-height:1.15!important;}
+.page-id-13 .fab-choice-heading .fab-choice-brand{display:block!important;width:250px!important;height:auto!important;max-height:135px!important;object-fit:contain!important;margin:0!important;}
+.page-id-13 .fab-choice-heading .fab-choice-subtitle{text-align:center!important;margin:14px auto 0!important;line-height:1.2!important;font-size:clamp(27px,3vw,40px)!important;}
+.page-id-13 .fab-choice-intro-clear{align-items:center!important;}
+.elementor .elementor-element-635a758 .fab-wedding-emphasis{display:block!important;width:100%!important;max-width:760px!important;box-sizing:border-box;margin:0 auto 16px!important;padding:18px 24px!important;text-align:center!important;background:#fff0b5!important;border-left:4px solid #d7ad39;border-radius:0 10px 10px 0;}
+@media(max-width:700px){.page-id-13 .fab-refined-hero .fab-hero-identity{grid-template-columns:1fr!important;gap:12px!important;width:calc(100% - 36px)!important;}.page-id-13 .fab-refined-hero .fab-hero-brand{max-width:320px!important;max-height:170px!important;}.page-id-13 .fab-refined-hero .fab-event-hero-carousel{height:300px!important;width:calc(100% - 16px)!important;margin:0 8px!important;}.page-id-13 .fab-refined-hero .fab-hero-track .fab-hero-slide{height:300px!important;width:calc(300px * var(--photo-ratio))!important;}.page-id-13 .fab-guest-promise{padding:24px 18px!important;}.page-id-13 .fab-choice-heading #fab-choice-title{flex-direction:column;}.page-id-13 .fab-choice-heading .fab-choice-brand{width:230px!important;}.elementor .elementor-element-635a758 .fab-wedding-emphasis{padding:16px!important;}}
+.elementor .fab-celebrate-frame .elementor-element-635a758 .fab-wedding-emphasis,.elementor .fab-celebrate-frame .elementor-element-635a758 .fab-wedding-emphasis *{color:#512561!important;font-size:clamp(19px,2vw,24px)!important;line-height:1.5!important;}
