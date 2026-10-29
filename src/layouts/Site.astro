@@ -6,6 +6,9 @@
 import { loadLayout, fillOrigin, type PageMeta } from '../lib/site';
 import { applyActiveState } from '../lib/nav';
 import NewsTicker from '../components/NewsTicker.astro';
+import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
+const assetVersion = createHash('sha256').update(readFileSync('public/custom.css')).update(readFileSync('public/scrapbook.js')).digest('hex').slice(0,12);
 
 interface Props {
   meta: PageMeta;
@@ -25,7 +28,8 @@ const showNews = meta.name === 'home' || meta.name === 'contact-us';
 <html lang={meta.htmlLang}>
 <head>
 <Fragment set:html={fill(head)} />
-<link rel="stylesheet" href="/custom.css" />
+<link rel="preload" href="/fonts/great-vibes.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+<link rel="stylesheet" href={`/custom.css?v=${assetVersion}`} />
 </head>
 <body class={`${meta.bodyClass}${showNews ? ' has-news-ticker' : ''}`} data-editor-page={meta.name}>
 <Fragment set:html={layout.before} />
@@ -35,6 +39,6 @@ const showNews = meta.name === 'home' || meta.name === 'contact-us';
 <Fragment set:html={fill(tail)} />
 {showNews && <NewsTicker />}
 <script is:inline src="/editor.js"></script>
-<script is:inline src="/scrapbook.js"></script>
+<script is:inline src={`/scrapbook.js?v=${assetVersion}`}></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ const MESSAGES = {
   error: 'An error occured.',
   invalid: "There's something wrong. The form is invalid.",
   required: 'This field is required.',
-  server: 'Your submission failed because of server error',
+  server: 'Your message could not be sent. Please email risa.fabevents@gmail.com or contact Risa on WhatsApp.',
 };
 
 const DEFAULT_TO = 'risa.fabevents@gmail.com';
@@ -60,7 +60,7 @@ async function parseFields(request: Request): Promise<{ fields: Fields; action: 
 }
 
 async function sendWithResend(fields: Fields, referrer: string): Promise<void> {
-  const to = process.env.CONTACT_TO || DEFAULT_TO;
+  const to = DEFAULT_TO;
   const from = process.env.CONTACT_FROM || DEFAULT_FROM;
   const lines = Object.entries(fields).map(([k, v]) => `${k}: ${v}`);
   if (referrer) lines.push('', `Sent from: ${referrer}`);
@@ -131,4 +131,43 @@ export async function POST(request: Request): Promise<Response> {
 
 export async function GET(): Promise<Response> {
   return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'POST' } });
+}
+
+// Vercel may consume multipart bodies before invoking a Web Request handler.
+// Read its Node request directly, preserving both raw and pre-parsed forms.
+export default async function handler(req: any, res: any): Promise<void> {
+  if (req.method !== 'POST') {
+    res.setHeader('Allow', 'POST');
+    res.statusCode = 405;
+    res.end('Method Not Allowed');
+    return;
+  }
+  const contentType = String(req.headers['content-type'] || '');
+  let body: BodyInit;
+  let type = contentType;
+  if (req.body && typeof req.body === 'object' && !Buffer.isBuffer(req.body)) {
+    const fields = new URLSearchParams();
+    for (const [key, value] of Object.entries(req.body)) {
+      if (typeof value === 'string') fields.set(key, value);
+      else if (key === 'form_fields' && value && typeof value === 'object') {
+        for (const [name, field] of Object.entries(value)) {
+          if (typeof field === 'string') fields.set(`form_fields[${name}]`, field);
+        }
+      }
+    }
+    body = fields.toString();
+    type = 'application/x-www-form-urlencoded';
+  } else if (req.body !== undefined) {
+    body = req.body;
+  } else {
+    const chunks: Buffer[] = [];
+    for await (const chunk of req) chunks.push(Buffer.from(chunk));
+    body = Buffer.concat(chunks);
+  }
+  const response = await POST(new Request('https://fabeventsisrael.com/api/contact', {
+    method: 'POST', headers: { 'Content-Type': type }, body,
+  }));
+  res.statusCode = response.status;
+  response.headers.forEach((value, key) => res.setHeader(key, value));
+  res.end(await response.text());
 }

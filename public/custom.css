@@ -2581,3 +2581,74 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 .page-id-13 .fab-refined-hero{min-height:740px!important;}
 .page-id-13 .fab-refined-hero .fab-hero-track .fab-hero-slide{height:740px!important;width:calc(740px * var(--photo-ratio))!important;}
 @media(max-width:700px){.page-id-13 .fab-hero-profession{font-size:21px!important;}.page-id-13 .fab-hero-direct-contact{gap:10px;margin:14px 0!important;}.page-id-13 .fab-hero-phone{font-size:22px!important;}.page-id-13 .fab-refined-hero{min-height:830px!important;}.page-id-13 .fab-refined-hero .fab-hero-track .fab-hero-slide{height:830px!important;width:calc(830px * var(--photo-ratio))!important;}}
+
+/* Mobile parity: natural photo proportions, readable brand accents, and balanced community logos. */
+.page-id-13 .fab-hero-profession{color:#742c83!important;}
+.page-id-13 .fab-hero-whatsapp{color:#e7c66c!important;background:#642b72!important;border-color:#e7c66c!important;}
+.fab-service-page .fab-gold-elegant,.page-id-401 .elementor-element-3e89d0a1 h2{color:#b48a2c!important;text-shadow:0 1px 0 #fff2c4;}
+.elementor-247 .fab-meet-heading h2{font-family:'Great Vibes','Segoe Script',cursive!important;font-weight:400!important;}
+.fab-booking-page .fab-booking-hero{background:#fff7e8!important;padding:36px 24px!important;}
+.fab-booking-hero>.fab-section-shell{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:32px;align-items:center;}
+.fab-booking-desk{margin:0!important;min-width:0;}
+.fab-booking-desk img{display:block;width:100%;height:auto!important;object-fit:contain;box-shadow:0 6px 20px #49342322;border-radius:10px;}
+.elementor-467 .elementor-element-63ba47eb{background-position:right top!important;}
+.fab-community-collage figure:nth-child(2){background:#fff7e7!important;padding:5px!important;align-items:center;}
+.fab-community-collage figure:nth-child(2) img{width:100%!important;max-height:none!important;}
+.fab-community-four{align-items:start!important;}
+.fab-community-four figure>img,.fab-community-four .fab-photo-window{height:auto!important;max-height:none!important;}
+.fab-community-four figure>img{display:block;width:100%!important;object-fit:contain!important;}
+.fab-community-four .fab-premiere-portrait{display:block;width:100%;aspect-ratio:3/2;overflow:hidden;}
+.fab-community-four .fab-premiere-portrait svg{display:block;width:100%;height:auto!important;}
+.fab-community-four .risa-community-speaking svg{height:auto!important;}
+.fab-community-four figcaption{margin:0!important;padding:10px 4px!important;}
+.fab-partner-logos{grid-template-columns:repeat(3,minmax(0,1fr))!important;align-items:stretch;}
+.fab-partner-logos>li,.fab-partner-logos>li.fab-chabad-logo-wide{padding:18px!important;min-height:205px!important;gap:12px!important;}
+.fab-partner-logos>li>a{display:flex!important;flex-direction:column!important;justify-content:center;gap:14px!important;height:100%;}
+.fab-partner-logos .fab-partner-mark{display:block;width:100%!important;max-width:240px!important;height:125px!important;flex:none;}
+.fab-partner-logos a>img{position:static!important;width:100%!important;max-width:240px!important;height:125px!important;object-fit:contain!important;}
+.fab-partner-logos a>span{font-size:16px;line-height:1.4;color:#56314f;}
+@media(max-width:900px){.fab-booking-hero>.fab-section-shell{grid-template-columns:1fr;gap:22px;}.fab-booking-desk{max-width:650px;margin:auto!important;}}
+@media(max-width:700px){
+.page-id-13 .fab-travel-three{grid-template-columns:1fr!important;gap:20px!important;}
+.page-id-13 .fab-travel-three>*{height:auto!important;min-height:0!important;padding:24px!important;margin:0!important;}
+.page-id-13 .fab-travel-three .fab-connected-title{font-size:32px!important;line-height:1.15!important;margin:0 0 16px!important;}
+.page-id-13 .fab-travel-three .fab-route-diagram svg{display:block;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:620/460;}
+.page-id-13 .fab-travel-three .fab-route-note{font-size:16px!important;line-height:1.5!important;margin:14px 0 0!important;}
+.elementor-247 .fab-meet-heading h2{font-family:'Great Vibes','Segoe Script',cursive!important;font-size:68px!important;}
+.elementor-247 .fab-meet-collage{display:flex!important;flex-direction:column!important;gap:24px!important;}
+.elementor-247 .fab-meet-collage>figure,.elementor-247 .fab-meet-collage>figure:last-child{width:100%!important;max-width:none!important;}
+.elementor-247 .fab-meet-collage img,.elementor-247 .fab-meet-collage .fab-risa-blue-frame img{position:static!important;height:auto!important;min-height:0!important;max-height:none!important;width:100%!important;object-fit:contain!important;}
+.elementor-247 .fab-meet-collage .fab-risa-half-crop,.elementor-247 .fab-meet-collage .fab-risa-blue-frame{height:auto!important;aspect-ratio:auto!important;overflow:visible!important;}
+.elementor-492 .elementor-element.fab-day-hero{padding:24px 16px!important;min-height:0!important;}
+.elementor-492 .fab-day-hero .elementor-element-12d804f{width:100%!important;max-width:none!important;}
+.elementor-492 .fab-day-hero .elementor-element-12d804f>.elementor-widget-wrap{padding:18px!important;}
+.elementor-492 .fab-day-hero h1{font-size:34px!important;line-height:1.12!important;margin-bottom:14px!important;}
+.elementor-492 .fab-day-promise{padding:12px!important;max-width:none!important;}
+.elementor-492 .fab-day-promise p{font-size:17px!important;line-height:1.45!important;margin-bottom:12px!important;}
+.elementor-492 .fab-day-promise br{display:none;}.elementor-492 .fab-day-promise strong{margin-inline:3px;}
+.elementor-492 .fab-day-promise-footer{padding-top:10px!important;gap:8px!important;}
+.elementor-467 .elementor-element.elementor-element-63ba47eb{background-position:right top!important;background-size:auto 320px!important;background-repeat:no-repeat!important;background-color:#fff6e9!important;padding:320px 16px 24px!important;}
+.elementor-467 .elementor-element-63ba47eb>.elementor-background-overlay{background:none!important;}
+.elementor-467 .elementor-element-63ba47eb>.elementor-container>.elementor-column{width:100%!important;}
+.elementor-467 .elementor-element-63ba47eb .elementor-widget-wrap{padding:16px!important;background:#fff6e9!important;}
+.fab-mitzvah-curated-gallery{grid-template-columns:1fr!important;gap:26px!important;padding:22px!important;}
+.fab-mitzvah-curated-gallery>figure,.fab-mitzvah-curated-gallery>figure:last-child:nth-child(odd){grid-column:1!important;max-width:none!important;width:100%!important;}
+.fab-mitzvah-curated-gallery .fab-chair-photo,.fab-mitzvah-curated-gallery .fab-photo-window{height:auto!important;display:block;aspect-ratio:auto!important;}
+.fab-mitzvah-curated-gallery svg{display:block;width:100%!important;height:auto!important;}
+.fab-baby-scrapbook .fab-baby-masonry{display:flex!important;flex-direction:column!important;gap:26px!important;}
+.fab-baby-masonry-column{display:contents!important;}
+.fab-baby-scrapbook .fab-baby-masonry figure,.fab-baby-scrapbook .fab-baby-masonry figure:first-child{width:100%!important;max-width:none!important;padding:10px!important;}
+.fab-community-four{grid-template-columns:1fr!important;padding:18px!important;gap:24px!important;}
+.fab-community-four figure{min-width:0;}.fab-community-four h2{font-size:34px!important;}
+.fab-community-four .fab-photo-window,.fab-community-four .fab-premiere-portrait{height:auto!important;}
+.fab-community-four .risa-community-speaking{aspect-ratio:425/565!important;}
+.fab-community-collage{padding:14px!important;gap:16px!important;grid-template-columns:1fr!important;}
+.fab-community-collage figure:first-child{grid-column:1!important;}
+.fab-partner-logos{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important;}
+.fab-partner-logos>li,.fab-partner-logos>li.fab-chabad-logo-wide{padding:12px!important;min-height:175px!important;}
+.fab-partner-logos .fab-partner-mark,.fab-partner-logos a>img{height:105px!important;max-width:100%!important;}
+.fab-partner-logos a>span{font-size:14px!important;}
+}
+@media(max-width:700px){.fab-partner-logos>li.fab-partner-horizontal{grid-column:1/-1;}.fab-partner-logos>li.fab-partner-horizontal .fab-partner-mark{max-width:300px!important;height:110px!important;}}
+.fab-partner-logos{grid-auto-flow:row dense;}
+@media(max-width:700px){.fab-community-cluster{grid-template-columns:1fr!important;justify-items:center;gap:26px!important;}.fab-community-cluster>figure{grid-column:1!important;grid-row:auto!important;width:100%!important;max-width:320px!important;margin:0!important;}.fab-community-cluster .fab-community-bags{max-width:230px!important;}.fab-community-cluster .fab-community-swag{max-width:240px!important;}.fab-community-cluster .fab-conference-flyer{max-width:300px!important;}.fab-community-cluster img{height:auto!important;max-height:none!important;object-fit:contain!important;}}
