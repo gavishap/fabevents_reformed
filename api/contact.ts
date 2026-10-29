@@ -22,6 +22,9 @@ const MESSAGES = {
 const DEFAULT_TO = 'risa.fabevents@gmail.com';
 const DEFAULT_FROM = 'FAB Events Israel by Risa <email@fabeventsisrael.com>';
 const SUBJECT = 'Contact Us';
+// Web3Forms form IDs are public submission identifiers, not secret API tokens.
+// This form belongs to Risa's verified Gmail inbox.
+const WEB3FORMS_FORM_ID = '82b72c28-36e1-48cd-8770-9e4a1ad166cd';
 
 type Fields = Record<string, string>;
 
@@ -88,15 +91,15 @@ async function sendWithWeb3Forms(fields: Fields, referrer: string): Promise<void
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify({
-      access_key: process.env.WEB3FORMS_ACCESS_KEY,
+      ...fields,
+      access_key: process.env.WEB3FORMS_ACCESS_KEY || WEB3FORMS_FORM_ID,
       subject: SUBJECT,
       from_name: 'FAB Events Israel by Risa',
-      ...fields,
       ...(referrer ? { sent_from: referrer } : {}),
     }),
   });
   const body = (await res.json().catch(() => ({}))) as { success?: boolean; message?: string };
-  if (!res.ok || body.success === false) throw new Error(`Web3Forms ${res.status}: ${body.message || 'failed'}`);
+  if (!res.ok || body.success !== true) throw new Error(`Web3Forms ${res.status}: ${body.message || 'failed'}`);
 }
 
 async function POST(request: Request): Promise<Response> {
@@ -117,7 +120,7 @@ async function POST(request: Request): Promise<Response> {
 
   try {
     if (process.env.RESEND_API_KEY) await sendWithResend(fields, referrer);
-    else if (process.env.WEB3FORMS_ACCESS_KEY) await sendWithWeb3Forms(fields, referrer);
+    else if (process.env.WEB3FORMS_ACCESS_KEY || WEB3FORMS_FORM_ID) await sendWithWeb3Forms(fields, referrer);
     else {
       console.error('contact: no delivery provider configured (RESEND_API_KEY or WEB3FORMS_ACCESS_KEY)');
       return fail(MESSAGES.server, {}, 500);
