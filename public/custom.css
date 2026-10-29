@@ -2683,6 +2683,27 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 @media(max-width:700px){.fab-partner-logos{grid-auto-flow:row!important;}.fab-partner-logos>li.fab-onefamily-logo{grid-column:1!important;}.fab-partner-logos>li.fab-yad-logo{grid-column:2!important;}}
 
 .fab-booking-hero>.fab-section-shell{backdrop-filter:blur(1px);}
+/* A clear contact introduction above the letter. */
+.fab-contact-top-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:40px;width:100%;margin-bottom:32px;}
+.page-id-352 .fab-contact-top-row .fab-contact-dream{margin:0!important;max-width:100%!important;}
+.page-id-352 .fab-contact-top-row .elementor-element-4dd5171b{width:100%!important;}
+.page-id-352 .fab-contact-top-row .elementor-element-4dd5171b>.elementor-widget-wrap{display:flex!important;flex-direction:column!important;align-items:center!important;gap:18px!important;padding:24px!important;text-align:center;}
+.page-id-352 .fab-contact-top-row .elementor-icon-box-wrapper,.page-id-352 .fab-contact-top-row .elementor-icon-box-content{text-align:center!important;display:block!important;}
+.page-id-352 .fab-contact-top-row .elementor-icon-box-description{margin:0!important;}.page-id-352 .fab-contact-top-row .fab-social-contact{display:block!important;margin:0!important;padding-top:14px!important;}.page-id-352 .fab-contact-top-row .fab-social-contact p{margin:0 0 12px!important;}
+.fab-baby-pink,.fab-baby-blue{font-family:'Comic Sans MS','Chalkboard SE','Trebuchet MS',sans-serif!important;font-weight:700;letter-spacing:-.025em;}
+.elementor-467 .elementor-element.elementor-element-63ba47eb{background-size:auto 100%!important;background-position:right center!important;background-repeat:no-repeat!important;background-color:#fff6e9!important;padding:38px 0!important;}
+.elementor-467 .elementor-element-63ba47eb>.elementor-container{max-width:1240px!important;justify-content:flex-start;}
+.elementor-467 .elementor-element.elementor-element-39d69ef8{width:52%!important;}
+.elementor-467 .elementor-element.elementor-element-39d69ef8>.elementor-widget-wrap{padding:24px!important;background:linear-gradient(90deg,#fff6e9f5,#fff6e9eb 85%,#fff6e9c7)!important;}
+.elementor-467 .fab-mitzvah-headline{font-size:clamp(38px,4vw,54px)!important;line-height:1.15!important;text-align:left!important;}
+.fab-service-page:has(.fab-community-collage)>.fab-service-hero{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center;padding:32px 24px;gap:24px;}
+.fab-service-hero:has(.fab-community-collage)>.fab-service-hero-copy{padding:25px!important;text-align:center;align-items:center;max-width:none;}
+.fab-service-hero:has(.fab-community-collage) h1{font-size:clamp(40px,4vw,58px)!important;line-height:1.1!important;}
+.fab-community-collage{padding:18px!important;grid-template-columns:1fr 1fr!important;gap:18px!important;align-items:center;}
+.fab-community-collage figure:first-child{grid-column:1/-1!important;}.fab-community-collage figure:first-child .fab-photo-mounted{max-width:360px;margin:auto;}
+.fab-community-collage figure:nth-child(2){display:block!important;padding:0!important;}.fab-community-collage figure:nth-child(2) .fab-photo-mounted{max-width:300px;margin:auto;}.fab-community-collage figure:nth-child(3) .fab-photo-mounted{max-width:190px;margin:auto;}
+.fab-community-collage figcaption{display:block!important;position:static!important;color:#65336d!important;background:transparent!important;font:600 16px/1.45 'Poppins',sans-serif!important;text-align:center;margin:10px 0 0!important;padding:0!important;}
+@media(max-width:700px){.fab-contact-top-row{grid-template-columns:1fr;gap:24px;}.page-id-352 .fab-contact-top-row .fab-contact-dream{max-width:420px!important;margin:auto!important;}.elementor-467 .elementor-element.elementor-element-63ba47eb{background-size:auto 350px!important;background-position:right -18px!important;padding:332px 16px 24px!important;}.elementor-467 .elementor-element.elementor-element-39d69ef8{width:100%!important;}.elementor-467 .elementor-element.elementor-element-39d69ef8>.elementor-widget-wrap{padding:16px!important;background:#fff6e9!important;}.elementor-467 .fab-mitzvah-headline{font-size:38px!important;}.fab-service-page:has(.fab-community-collage)>.fab-service-hero{grid-template-columns:1fr!important;padding:24px 16px;}.fab-service-hero:has(.fab-community-collage)>.fab-service-hero-copy{padding:10px!important;}.fab-community-collage figure:first-child .fab-photo-mounted{max-width:320px;}.fab-community-collage figure:nth-child(3) .fab-photo-mounted{max-width:160px;}.fab-community-collage figcaption{font-size:14px!important;}}
 .fab-why-choose-title{display:inline-block;color:#702681!important;font:700 clamp(40px,5vw,62px)/1.12 'Cormorant Garamond',Georgia,serif;letter-spacing:.01em;border-bottom:3px solid #e4bc55;padding-bottom:12px;text-shadow:0 1px #fff2c8;}
 .page-id-247 .fab-support-grid .fab-support-title{font-family:'Cormorant Garamond',Georgia,serif!important;font-size:32px!important;line-height:1.05!important;font-weight:700!important;color:#702681!important;margin:0 0 10px!important;min-height:0!important;padding:0!important;}
 .elementor-247 .elementor-image-box-content:has(.fab-support-title){display:block!important;}.elementor-247 .fab-support-title+p{margin:0!important;padding-top:0!important;}
@@ -2703,3 +2724,5 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 @media(max-width:700px){.fab-booking-page .fab-booking-hero{background-image:linear-gradient(#fff9eba6,#fff9ebc4),url('/images/travel-booking-desk.webp')!important;background-position:73% center!important;}.fab-booking-page .fab-booking-hero :is(h1,p,.fab-booking-promise){text-align:center!important;}}
 
 .page-id-352 .fab-letter-panel>.elementor-widget-wrap{border:0!important;box-shadow:none!important;background:transparent!important;padding:0!important;}.fab-airmail-form{width:100%;padding:28px;background:#fffdf7;box-shadow:0 8px 28px #50354f14;border:9px solid transparent!important;border-image:repeating-linear-gradient(135deg,#bb6674 0 14px,#fffdf7 14px 28px,#5985a1 28px 42px,#fffdf7 42px 56px) 9!important;}@media(max-width:700px){.fab-airmail-form{padding:18px 12px;}}
+
+.page-id-352 .fab-contact-top-row .elementor-icon-box-description,.page-id-352 .fab-contact-top-row .fab-social-contact p{text-align:center!important;}.page-id-352 .fab-contact-top-row .elementor-widget-icon-box{margin:0!important;}.fab-service-hero:has(.fab-community-collage) .fab-service-hero-copy p{text-align:center!important;}@media(min-width:701px){.elementor-467 .elementor-element.elementor-element-39d69ef8>.elementor-widget-wrap{padding-left:38px!important;}}
