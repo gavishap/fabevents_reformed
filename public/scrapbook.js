@@ -40,7 +40,7 @@ document.querySelectorAll('.fab-wedding-album, .fab-event-hero-carousel').forEac
     if (!running()) { last = 0; return; }
     const delta = last ? Math.min(now - last, 64) : 0;
     last = now;
-    offset += delta * (phone.matches ? .045 : .06);
+    offset += delta * (hero ? (phone.matches ? .056 : .075) : (phone.matches ? .045 : .06));
     if (offset >= firstWidth) {
       offset -= firstWidth;
       track.append(track.firstElementChild);
