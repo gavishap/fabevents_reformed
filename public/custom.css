@@ -2651,4 +2651,36 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 }
 @media(max-width:700px){.fab-partner-logos>li.fab-partner-horizontal{grid-column:1/-1;}.fab-partner-logos>li.fab-partner-horizontal .fab-partner-mark{max-width:300px!important;height:110px!important;}}
 .fab-partner-logos{grid-auto-flow:row dense;}
+/* Photo backgrounds and balanced contact layout, October 29. */
+.fab-booking-page .fab-booking-hero{position:relative;background:linear-gradient(90deg,#fff9ebed 0%,#fff9ebcf 52%,#fff9eb33 100%),url('/images/travel-booking-desk.webp') center/cover!important;}
+.fab-booking-hero>.fab-section-shell{display:block!important;}.fab-booking-hero>.fab-section-shell>div{max-width:760px;}
+@media(min-width:701px){.fab-community-four figure:last-child>img{height:330px!important;width:100%!important;object-fit:contain!important;}}
+.fab-contact-brand{text-align:center;width:100%;margin:0 auto 22px;}.fab-contact-brand img{display:block;width:260px;max-width:100%;height:auto;margin:auto;}
+.page-id-352 .elementor-element-797d0765{padding-top:28px!important;padding-bottom:28px!important;}
+.page-id-352 .elementor-element-4b7ba96e>.elementor-container{align-items:flex-start;gap:32px;}
+.page-id-352 .elementor-element-4dd5171b,.page-id-352 .elementor-element-7946ad22{width:calc(50% - 16px)!important;}
+.page-id-352 .fab-contact-dream{margin:0 0 28px!important;max-width:480px!important;}
+.page-id-352 .fab-contact-dream h2{font-size:30px!important;}
+.page-id-352 .fab-contact-fields textarea{min-height:265px!important;font-size:17px!important;line-height:1.65!important;}
+.page-id-352 .fab-contact-fields textarea::placeholder{color:#655c66;opacity:1;}
+.page-id-352 .fab-social-contact p,.page-id-352 .fab-social-contact a{font-size:19px!important;line-height:1.6!important;}
+.page-id-352 .fab-social-contact{margin-top:20px;padding-top:18px;border-top:1px solid #d4b576;}
+@media(max-width:700px){
+.fab-booking-page .fab-booking-hero{background:linear-gradient(#fff9ebcc,#fff9ebd9),url('/images/travel-booking-desk.webp') 68% center/auto 100%!important;padding:30px 20px!important;}
+.fab-booking-hero>.fab-section-shell>div{text-align:center;}.fab-booking-hero .fab-simcha-agent-message{text-align:center;border-left:0;border-top:3px solid #c79c37;}
+.fab-community-cluster{display:flex!important;flex-direction:column!important;height:auto!important;overflow:visible!important;}
+.fab-community-cluster>figure,.fab-community-cluster>figure:first-child,.fab-community-cluster .fab-community-bags,.fab-community-cluster .fab-community-swag,.fab-community-cluster .fab-conference-flyer{display:block!important;position:relative!important;grid-column:auto!important;grid-row:auto!important;flex:none!important;width:100%!important;max-width:320px!important;margin:0 auto!important;}
+.fab-community-cluster .fab-photo-corner{display:none!important;}.fab-community-cluster .fab-image-filter{position:absolute!important;width:0!important;height:0!important;overflow:hidden;}
+.fab-partner-logos>li.fab-chabad-logo-wide{grid-column:1/-1!important;}.fab-chabad-logo-wide a{flex-direction:column!important;}.fab-chabad-logo-wide .fab-partner-mark{width:100%!important;max-width:310px!important;height:105px!important;}
+.fab-partner-logos>li.fab-onefamily-logo,.fab-partner-logos>li.fab-yad-logo{grid-column:auto!important;min-height:155px!important;}
+.fab-partner-logos>li.fab-onefamily-logo .fab-partner-mark{height:75px!important;}
+.page-id-352 .elementor-element-4b7ba96e>.elementor-container{display:flex;flex-direction:column;gap:24px;}
+.page-id-352 .elementor-element-4dd5171b,.page-id-352 .elementor-element-7946ad22{width:100%!important;}
+.page-id-352 .fab-contact-dream{max-width:100%!important;}.page-id-352 .elementor-element-4dd5171b>.elementor-widget-wrap{padding:18px!important;}
+}
 @media(max-width:700px){.fab-community-cluster{grid-template-columns:1fr!important;justify-items:center;gap:26px!important;}.fab-community-cluster>figure{grid-column:1!important;grid-row:auto!important;width:100%!important;max-width:320px!important;margin:0!important;}.fab-community-cluster .fab-community-bags{max-width:230px!important;}.fab-community-cluster .fab-community-swag{max-width:240px!important;}.fab-community-cluster .fab-conference-flyer{max-width:300px!important;}.fab-community-cluster img{height:auto!important;max-height:none!important;object-fit:contain!important;}}
+
+@media(max-width:700px){.fab-partner-logos{grid-auto-flow:row!important;}.fab-partner-logos>li.fab-onefamily-logo{grid-column:1!important;}.fab-partner-logos>li.fab-yad-logo{grid-column:2!important;}}
+
+.fab-booking-hero>.fab-section-shell{backdrop-filter:blur(1px);}
+@media(max-width:700px){.fab-booking-page .fab-booking-hero{background-image:linear-gradient(#fff9eba6,#fff9ebc4),url('/images/travel-booking-desk.webp')!important;background-position:73% center!important;}.fab-booking-page .fab-booking-hero :is(h1,p,.fab-booking-promise){text-align:center!important;}}
