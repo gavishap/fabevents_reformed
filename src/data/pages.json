@@ -158,5 +158,15 @@
     "htmlLang": "en-US",
     "bodyClass": "fab-associate-page",
     "status": 200
+  },
+  {
+    "name": "common-questions",
+    "path": "/common-questions/",
+    "wpId": null,
+    "type": "page",
+    "title": "Common Questions | Event Planning in Israel | FAB Events",
+    "htmlLang": "en-US",
+    "bodyClass": "wp-singular page fab-common-questions-page elementor-kit-9",
+    "status": 200
   }
 ]
