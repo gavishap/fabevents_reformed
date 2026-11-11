@@ -2780,3 +2780,18 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
     background-image: url('/images/optimized/wedding-ceremony-hero-768.webp') !important;
   }
 }
+
+@media (max-width: 480px) {
+  .fab-site-nav {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fab-site-nav > :nth-child(-n+3) { grid-column: span 2; }
+  .fab-site-nav > :nth-child(4),
+  .fab-site-nav > :nth-child(5) { grid-column: span 3; }
+  .fab-site-nav > :last-child { grid-column: 1 / -1; }
+}

@@ -27,6 +27,12 @@ const showNews = meta.name === 'home' || meta.name === 'contact-us';
 
 <html lang={meta.htmlLang}>
 <head>
+{meta.name === 'customized-bar-bat-mitzvot' && (
+  <link rel="preload" as="image" href="/images/optimized/bar-bat-mitzvah-celebration-hero-960.webp" media="(max-width: 700px)" />
+)}
+{meta.name === 'customized-weddings' && (
+  <link rel="preload" as="image" href="/images/optimized/wedding-ceremony-hero-768.webp" media="(max-width: 700px)" />
+)}
 <Fragment set:html={fill(head)} />
 <link rel="preload" href="/fonts/great-vibes.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
 <link rel="stylesheet" href={`/custom.css?v=${assetVersion}`} />
