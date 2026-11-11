@@ -1305,7 +1305,7 @@ body .elementor-icon-box-description { text-transform: none !important; }
 .has-news-ticker .heateor_sss_mobile_footer,.has-news-ticker .heateor_sss_vertical_sharing { display:none!important; }
 .fab-news-ticker { z-index:2147483000; }
 /* Wedding feature: real photo with bright, readable overlay text. */
-.fab-wedding-square { background:linear-gradient(180deg,rgba(20,12,24,.25),rgba(20,12,24,.78)),url('/assets/uploads/2026/09/wedding-couple-stone-wall.jpg') center 42% / cover; color:#fffaf0!important; justify-content:flex-end; text-shadow:0 2px 8px #000; }
+.fab-wedding-square { background:linear-gradient(180deg,rgba(20,12,24,.25),rgba(20,12,24,.78)),url('/images/optimized/wedding-couple-stone-wall-1280.webp') center 42% / cover; color:#fffaf0!important; justify-content:flex-end; text-shadow:0 2px 8px #000; }
 .fab-wedding-square h3 { color:#ffe38a!important; font-weight:700; }
 .fab-wedding-square .fab-kicker,.fab-wedding-square .fab-service-explore { color:#ffe38a!important; font-weight:700; }
 .fab-wedding-square p,.fab-wedding-square li { color:#fffaf0!important; }
@@ -1589,7 +1589,7 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 @media(max-width:767px){.fab-event-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}.fab-event-photo-grid img{height:220px;}}
 @media(max-width:480px){.fab-event-photo-grid{grid-template-columns:1fr;}.fab-event-photo-grid img{height:auto;max-height:480px;}.fab-new-photo-gallery{padding:35px 18px;}}
 /* September photo corrections, authentic IDF visuals, contact and press additions. */
-.elementor-401 .elementor-element.fab-wedding-corrected-hero { background-image:url('/images/wedding-ceremony.jpg')!important; background-position:center 48%!important; background-size:cover!important; }
+.elementor-401 .elementor-element.fab-wedding-corrected-hero { background-image:url('/images/optimized/wedding-ceremony-hero-1024.webp')!important; background-position:center 48%!important; background-size:cover!important; }
 .elementor-492 .elementor-element.fab-day-hero { background-image:url('/images/wedding-day-celebration.jpg')!important; background-position:center!important; background-size:cover!important; }
 .elementor-511 .elementor-element.elementor-element-d9e8cdd { background-image:url('/images/wedding-veil-moment.jpg')!important; background-position:center 42%!important; background-size:cover!important; }
 .elementor-825 .elementor-element.fab-idf-symbol-hero { background:linear-gradient(125deg,#e8ebdf,#faf8ef 52%,#d9e6ed)!important; padding:65px 24px!important; }
@@ -1989,7 +1989,7 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 @media(max-width:900px){.fab-service-hero.fab-baby-photo-hero{background-size:auto 155%;background-position:62% bottom;}}
 /* Mirror only the ceremony photograph; keep all lettering readable. */
 .elementor-401 .elementor-element.fab-wedding-corrected-hero{position:relative;isolation:isolate;background-image:none!important;overflow:hidden;}
-.elementor-401 .elementor-element.fab-wedding-corrected-hero::before{content:'';position:absolute;inset:0;background:url('/images/wedding-ceremony.jpg') center 48%/cover;transform:scaleX(-1);z-index:-1;pointer-events:none;}
+.elementor-401 .elementor-element.fab-wedding-corrected-hero::before{content:'';position:absolute;inset:0;background:url('/images/optimized/wedding-ceremony-hero-1024.webp') center 48%/cover;transform:scaleX(-1);z-index:-1;pointer-events:none;}
 .fab-album-photo .fab-wedding-dancers-crop{width:330px;height:345px;flex:none;}
 @media(max-width:700px){.fab-service-hero.fab-baby-photo-hero{background-size:auto 760px;background-position:65% -230px;background-repeat:no-repeat;background-color:#fbf3e5;padding-top:260px;}.fab-album-photo .fab-wedding-dancers-crop{width:270px;height:282px;}}
 .fab-meet-collage .fab-risa-coordinator-crop{display:block;position:relative;overflow:hidden;width:100%;aspect-ratio:350/330;}
@@ -2762,4 +2762,21 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 .fab-community-intro.fab-community-feature {
   grid-template-columns: minmax(0, 680px);
   justify-content: center;
+}
+
+
+@media (max-width: 700px) {
+  .fab-wedding-square {
+    background-image: linear-gradient(180deg, rgba(20,12,24,.25), rgba(20,12,24,.78)), url('/images/optimized/wedding-couple-stone-wall-720.webp');
+  }
+
+  .elementor-467 .elementor-element.elementor-element-63ba47eb,
+  .elementor-467 .elementor-element.elementor-element-63ba47eb > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url('/images/optimized/bar-bat-mitzvah-celebration-hero-960.webp') !important;
+  }
+
+  .elementor-401 .elementor-element.fab-wedding-corrected-hero,
+  .elementor-401 .elementor-element.fab-wedding-corrected-hero::before {
+    background-image: url('/images/optimized/wedding-ceremony-hero-768.webp') !important;
+  }
 }
