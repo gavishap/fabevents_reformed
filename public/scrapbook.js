@@ -13,12 +13,19 @@ document.querySelectorAll('.fab-wedding-album, .fab-event-hero-carousel').forEac
   const phone = matchMedia('(max-width: 650px)');
   let playing = !reduced.matches, visible = false, focused = false, frame = 0;
   let last = 0, offset = 0, firstWidth = 0, overflowing = false;
-  const preload = () => [...track.children].slice(0, 4).forEach(card => {
-    card.querySelectorAll('img').forEach(img => {
-      img.loading = 'eager';
-      if (img.complete && img.naturalWidth) img.decode?.().catch(() => {});
-    });
-  });
+  const preload = () => {
+    let width = 0;
+    for (const card of track.children) {
+      for (const img of card.querySelectorAll('img')) {
+        if (img.loading === 'lazy') {
+          img.fetchPriority = 'low';
+          img.loading = 'eager';
+        }
+      }
+      if (width >= track.clientWidth) break;
+      width += card.getBoundingClientRect().width;
+    }
+  };
   const update = () => {
     if (play) {
       play.textContent = playing ? 'Pause' : 'Play';
