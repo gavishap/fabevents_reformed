@@ -2750,3 +2750,16 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 .fab-facebook-reviews .fab-document-button{white-space:normal;line-height:1.9;}.fab-facebook-reviews .fab-review-count{display:inline-block;padding:0 .28em;margin:0 .12em;border-radius:6px;background:#ffe39a;color:#702681!important;font-size:1.8em;font-weight:800;line-height:1.35;letter-spacing:0;vertical-align:middle;}
 
 .fab-benefit-details .fab-checklist-card{background:linear-gradient(0deg,#160f1af5,#160f1a99),var(--benefit-photo) center/cover!important;}.fab-benefit-details .fab-checklist-card .fab-benefit-summary{color:#ffe39a!important;}
+
+.fab-service-hero-copy .fab-community-brand {
+  color: #702681;
+  font-size: clamp(20px, 2.4vw, 29px) !important;
+  line-height: 1.3;
+  letter-spacing: .025em;
+  text-transform: none;
+}
+
+.fab-community-intro.fab-community-feature {
+  grid-template-columns: minmax(0, 680px);
+  justify-content: center;
+}
