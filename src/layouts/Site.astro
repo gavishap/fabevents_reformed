@@ -40,7 +40,9 @@ const pageHead = bundleCapturedStyles(meta.name, head).head;
   </>
 )}
 <Fragment set:html={fill(pageHead)} />
-<link rel="preload" href="/fonts/great-vibes.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+{meta.name !== 'customized-weddings' && (
+  <link rel="preload" href="/fonts/great-vibes.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+)}
 <link rel="stylesheet" href={`/custom.css?v=${assetVersion}`} />
 </head>
 <body class={`${meta.bodyClass}${showNews ? ' has-news-ticker' : ''}`} data-editor-page={meta.name}>
@@ -50,7 +52,7 @@ const pageHead = bundleCapturedStyles(meta.name, head).head;
 <Fragment set:html={fill(layout.footer)} />
 <Fragment set:html={fill(tail)} />
 {showNews && <NewsTicker />}
-<script is:inline src="/editor.js"></script>
-<script is:inline src={`/scrapbook.js?v=${assetVersion}`}></script>
+<script is:inline defer={meta.name === 'customized-weddings'} src="/editor.js"></script>
+<script is:inline defer={meta.name === 'customized-weddings'} src={`/scrapbook.js?v=${assetVersion}`}></script>
 </body>
 </html>
