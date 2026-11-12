@@ -1989,7 +1989,8 @@ img.fab-real-base-main { width:100%!important; height:auto!important; object-fit
 @media(max-width:900px){.fab-service-hero.fab-baby-photo-hero{background-size:auto 155%;background-position:62% bottom;}}
 /* Mirror only the ceremony photograph; keep all lettering readable. */
 .elementor-401 .elementor-element.fab-wedding-corrected-hero{position:relative;isolation:isolate;background-image:none!important;overflow:hidden;}
-.elementor-401 .elementor-element.fab-wedding-corrected-hero::before{content:'';position:absolute;inset:0;background:url('/images/optimized/wedding-ceremony-hero-1024.webp') center 48%/cover;transform:scaleX(-1);z-index:-1;pointer-events:none;}
+.fab-wedding-hero-photo { position:absolute; inset:0; z-index:-1; pointer-events:none; }
+.elementor-401 .fab-wedding-hero-photo img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 48%; transform:scaleX(-1); }
 .fab-album-photo .fab-wedding-dancers-crop{width:330px;height:345px;flex:none;}
 @media(max-width:700px){.fab-service-hero.fab-baby-photo-hero{background-size:auto 760px;background-position:65% -230px;background-repeat:no-repeat;background-color:#fbf3e5;padding-top:260px;}.fab-album-photo .fab-wedding-dancers-crop{width:270px;height:282px;}}
 .fab-meet-collage .fab-risa-coordinator-crop{display:block;position:relative;overflow:hidden;width:100%;aspect-ratio:350/330;}
@@ -2775,9 +2776,6 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
     background-image: url('/images/optimized/bar-bat-mitzvah-celebration-hero-960.webp') !important;
   }
 
-  .elementor-401 .elementor-element.fab-wedding-corrected-hero::before {
-    background-image: url('/images/optimized/wedding-ceremony-hero-768.webp') !important;
-  }
 }
 
 @media (max-width: 480px) {
