@@ -7,6 +7,7 @@ import { loadLayout, fillOrigin, type PageMeta } from '../lib/site';
 import { applyActiveState } from '../lib/nav';
 import { bundleCapturedStyles } from '../lib/captured-styles';
 import NewsTicker from '../components/NewsTicker.astro';
+import weddingFontFaces from '../data/pages/customized-weddings/font-faces.css?raw';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 const assetVersion = createHash('sha256').update(readFileSync('public/custom.css')).update(readFileSync('public/scrapbook.js')).digest('hex').slice(0,12);
@@ -33,11 +34,16 @@ const pageHead = bundleCapturedStyles(meta.name, head).head;
   <link rel="preload" as="image" href="/images/optimized/bar-bat-mitzvah-celebration-hero-960.webp" media="(max-width: 700px)" />
 )}
 {meta.name === 'customized-weddings' && (
-  <link rel="preload" as="image" href="/images/optimized/wedding-ceremony-hero-768.webp" media="(max-width: 700px)" />
+  <>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="preload" as="image" href="/images/optimized/wedding-ceremony-hero-768.webp" media="(max-width: 700px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/optimized/wedding-ceremony-hero-1024.webp" media="(min-width: 701px)" fetchpriority="high" />
+  </>
 )}
 <Fragment set:html={fill(pageHead)} />
 <link rel="preload" href="/fonts/great-vibes.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
 <link rel="stylesheet" href={`/custom.css?v=${assetVersion}`} />
+{meta.name === 'customized-weddings' && <style is:inline set:html={weddingFontFaces}></style>}
 </head>
 <body class={`${meta.bodyClass}${showNews ? ' has-news-ticker' : ''}`} data-editor-page={meta.name}>
 <Fragment set:html={layout.before} />
