@@ -13,6 +13,9 @@ export function bundleCapturedStyles(page: string, head: string) {
   if (!bundledStylePages.includes(page)) return { head, bundles: [] };
 
   const bundles: { filename: string; css: string }[] = [];
+  const fontFaces = page === 'customized-weddings'
+    ? readFileSync('src/data/pages/customized-weddings/font-faces.css', 'utf8')
+    : '';
   const bundledHead = head.replace(localStyles, (links) => {
     const sheets = [...links.matchAll(href)].map(([, url]) => {
       const path = url.split('?')[0];
@@ -24,7 +27,7 @@ export function bundleCapturedStyles(page: string, head: string) {
         return 'url("' + resolved.pathname + resolved.search + resolved.hash + '")';
       });
     });
-    const css = sheets.join('\n');
+    const css = fontFaces ? sheets.join('\n') + '\n' + fontFaces : sheets.join('\n');
     // An import or namespace must stay in its own stylesheet to keep its scope.
     if (/@(?:import|namespace)\b/i.test(css)) return links;
     const hash = createHash('sha256').update(css).digest('hex').slice(0, 12);
