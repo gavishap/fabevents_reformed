@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
+import { transformSync } from 'esbuild';
 
 export const bundledStylePages = ['home', 'customized-weddings'];
 
@@ -45,7 +46,8 @@ export function bundleCapturedStyles(page: string, head: string) {
     const after = bundledHead.slice(index + marker.length);
     const inlineStyles = /<style(?:\s[^>]*)?>([\s\S]*?)<\/style>/g;
     const laterStyles = [...after.matchAll(inlineStyles)].map(([, css]) => css);
-    const css = [original.css, ...laterStyles, readFileSync('public/custom.css', 'utf8')].join('\n');
+    const combined = [original.css, ...laterStyles, readFileSync('public/custom.css', 'utf8')].join('\n');
+    const { code: css } = transformSync(combined, { loader: 'css', minify: true, target: 'safari15' });
     const filename = page + '-' + createHash('sha256').update(css).digest('hex').slice(0, 12);
     return {
       head: before + link(filename) + after.replace(inlineStyles, ''),

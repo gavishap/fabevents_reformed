@@ -52,7 +52,15 @@ const pageStyles = bundleCapturedStyles(meta.name, head);
 <Fragment set:html={fill(layout.footer)} />
 <Fragment set:html={fill(tail)} />
 {showNews && <NewsTicker />}
-<script is:inline defer={meta.name === 'customized-weddings'} src="/editor.js"></script>
+{meta.name === 'customized-weddings' ? (
+  <script is:inline>
+    if (new URLSearchParams(location.search).get('edit') === '1') {
+      const editor = document.createElement('script');
+      editor.src = '/editor.js';
+      document.head.append(editor);
+    }
+  </script>
+) : <script is:inline src="/editor.js"></script>}
 <script is:inline defer={meta.name === 'customized-weddings'} src={`/scrapbook.js?v=${assetVersion}`}></script>
 </body>
 </html>
