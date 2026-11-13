@@ -10,9 +10,10 @@ const href = /href="([^"]+)"/g;
 const cssUrl = /url\(\s*(?:"([^"]*)"|'([^']*)'|([^)]*?))\s*\)/gi;
 
 export function bundleCapturedStyles(page: string, head: string) {
-  if (!bundledStylePages.includes(page)) return { head, bundles: [] };
+  if (!bundledStylePages.includes(page)) return { head, bundles: [], includesOverrides: false };
 
   const bundles: { filename: string; css: string }[] = [];
+  const isWeddings = page === 'customized-weddings';
   const fontFaces = page === 'customized-weddings'
     ? readFileSync('src/data/pages/customized-weddings/font-faces.css', 'utf8')
     : '';
@@ -35,5 +36,22 @@ export function bundleCapturedStyles(page: string, head: string) {
     bundles.push({ filename, css });
     return '<link rel="stylesheet" href="/styles/' + filename + '.css">\n';
   });
-  return { head: bundledHead, bundles };
+  if (isWeddings && bundles.length === 1) {
+    const original = bundles[0];
+    const link = (name: string) => '<link rel="stylesheet" href="/styles/' + name + '.css">';
+    const marker = link(original.filename);
+    const index = bundledHead.indexOf(marker);
+    const before = bundledHead.slice(0, index);
+    const after = bundledHead.slice(index + marker.length);
+    const inlineStyles = /<style(?:\s[^>]*)?>([\s\S]*?)<\/style>/g;
+    const laterStyles = [...after.matchAll(inlineStyles)].map(([, css]) => css);
+    const css = [original.css, ...laterStyles, readFileSync('public/custom.css', 'utf8')].join('\n');
+    const filename = page + '-' + createHash('sha256').update(css).digest('hex').slice(0, 12);
+    return {
+      head: before + link(filename) + after.replace(inlineStyles, ''),
+      bundles: [{ filename, css }],
+      includesOverrides: true,
+    };
+  }
+  return { head: bundledHead, bundles, includesOverrides: false };
 }
