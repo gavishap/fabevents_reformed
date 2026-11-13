@@ -2792,3 +2792,14 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
   .fab-site-nav > :nth-child(5) { grid-column: span 3; }
   .fab-site-nav > :last-child { grid-column: 1 / -1; }
 }
+
+/* Render the wedding story and services as readers approach them. */
+@media (max-width: 700px) {
+  .elementor-401 > .elementor-element-23810bf9,
+  .elementor-401 > .fab-robin-story,
+  .elementor-401 > .elementor-element-378d90e,
+  .elementor-401 > .elementor-element-4e8f653 {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+}
