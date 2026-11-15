@@ -22,11 +22,7 @@ const { meta, head, content, tail } = Astro.props;
 const origin = Astro.site ? Astro.site.origin : 'https://fabeventsisrael.com';
 const layout = loadLayout();
 const fill = (html: string) => fillOrigin(html, origin);
-const isWeddings = meta.name === 'customized-weddings';
-const headerMarkup = isWeddings
-  ? layout.header.replace(/(<a class="fab-site-logo"[^>]*><img )/, '$1fetchpriority="low" ')
-  : layout.header;
-const header = fill(applyActiveState(headerMarkup, meta));
+const header = fill(applyActiveState(layout.header, meta));
 const showNews = meta.name === 'home' || meta.name === 'contact-us';
 const pageStyles = bundleCapturedStyles(meta.name, head);
 ---
