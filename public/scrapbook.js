@@ -77,7 +77,7 @@ document.querySelectorAll('.fab-wedding-album, .fab-event-hero-carousel').forEac
   new IntersectionObserver(entries => {
     visible = entries[0].isIntersecting;
     if (visible) { measure(); preload(); start(); } else stop();
-  }, {rootMargin:'100px 0px',threshold:0}).observe(album);
+  }, {rootMargin: hero ? '100px 0px' : '0px', threshold:0}).observe(album);
   new ResizeObserver(() => { measure(); offset = Math.min(offset, firstWidth); if (running()) start(); else stop(); }).observe(track);
   document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); else start(); });
   reduced.addEventListener('change', () => { playing = !reduced.matches; update(); if (playing) start(); else stop(); });
