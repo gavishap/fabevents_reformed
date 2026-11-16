@@ -13,19 +13,10 @@ document.querySelectorAll('.fab-wedding-album, .fab-event-hero-carousel').forEac
   const phone = matchMedia('(max-width: 650px)');
   let playing = !reduced.matches, visible = false, focused = false, frame = 0;
   let last = 0, offset = 0, firstWidth = 0, overflowing = false;
-  const restoreImage = img => {
-    if (!img.dataset.gallerySrc) return;
-    if (img.dataset.gallerySrcset) img.srcset = img.dataset.gallerySrcset;
-    img.src = img.dataset.gallerySrc;
-    delete img.dataset.gallerySrc;
-    delete img.dataset.gallerySrcset;
-    img.classList.remove('fab-gallery-pending');
-  };
   const preload = () => {
     let width = 0;
     for (const card of track.children) {
       for (const img of card.querySelectorAll('img')) {
-        restoreImage(img);
         if (img.loading === 'lazy') {
           img.fetchPriority = 'low';
           img.loading = 'eager';
@@ -87,15 +78,6 @@ document.querySelectorAll('.fab-wedding-album, .fab-event-hero-carousel').forEac
     visible = entries[0].isIntersecting;
     if (visible) { measure(); preload(); start(); } else stop();
   }, {rootMargin: hero ? '100px 0px' : '0px', threshold:0}).observe(album);
-  if (!hero) {
-    const warmGallery = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      track.querySelectorAll('img[data-gallery-src]').forEach(restoreImage);
-      preload();
-      warmGallery.disconnect();
-    }, {rootMargin: '48px 0px'});
-    warmGallery.observe(album);
-  }
   new ResizeObserver(() => { measure(); offset = Math.min(offset, firstWidth); if (running()) start(); else stop(); }).observe(track);
   document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); else start(); });
   reduced.addEventListener('change', () => { playing = !reduced.matches; update(); if (playing) start(); else stop(); });
