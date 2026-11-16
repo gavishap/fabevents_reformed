@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { transformSync } from 'esbuild';
+import postcss from 'postcss';
 
 export const bundledStylePages = ['home', 'customized-weddings'];
 
@@ -47,7 +48,15 @@ export function bundleCapturedStyles(page: string, head: string) {
     const inlineStyles = /<style(?:\s[^>]*)?>([\s\S]*?)<\/style>/g;
     const laterStyles = [...after.matchAll(inlineStyles)].map(([, css]) => css);
     const combined = [original.css, ...laterStyles, readFileSync('public/custom.css', 'utf8')].join('\n');
-    const { code: css } = transformSync(combined, { loader: 'css', minify: true, target: 'safari15' });
+    const weddingStyles = postcss.parse(combined);
+    weddingStyles.walkRules(rule => {
+      // These page and template classes only exist on other pages.
+      const selectors = rule.selectors.filter(selector =>
+        !/^\.(?:page-id-(?:13|247|352|467)|elementor-(?:13|247|352|467))(?=[\s.:#\[>+~]|$)/.test(selector));
+      if (selectors.length === 0) rule.remove();
+      else if (selectors.length !== rule.selectors.length) rule.selectors = selectors;
+    });
+    const { code: css } = transformSync(weddingStyles.toString(), { loader: 'css', minify: true, target: 'safari15' });
     const filename = page + '-' + createHash('sha256').update(css).digest('hex').slice(0, 12);
     return {
       head: before + link(filename) + after.replace(inlineStyles, ''),
