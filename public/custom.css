@@ -2968,3 +2968,75 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
   outline: 2px solid #fff9ee;
   outline-offset: 3px;
 }
+
+.fab-home-stories {
+  width: min(1060px, calc(100% - 32px));
+  margin: 24px auto 38px;
+  padding-top: 24px;
+  border-top: 2px solid #b68d43;
+  color: #43244c;
+}
+.fab-home-stories h2 {
+  margin: 0 0 24px;
+  text-align: center;
+  color: #542965;
+  font: 600 clamp(34px, 6vw, 55px)/1.15 "Cormorant Garamond", Georgia, serif;
+}
+.fab-home-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.fab-home-stories article {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #dac497;
+  border-radius: 12px;
+  background: #fffaf1;
+}
+.fab-home-stories img {
+  display: block;
+  width: 100%;
+  height: clamp(190px, 32vw, 315px);
+  object-fit: cover;
+  object-position: center 43%;
+}
+.fab-home-story-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(18px, 3vw, 24px);
+}
+.fab-home-story-copy h3 {
+  margin: 8px 0 12px;
+  color: #542965;
+  text-transform: none;
+  font: 600 clamp(26px, 3.2vw, 36px)/1.14 "Cormorant Garamond", Georgia, serif;
+}
+.fab-home-story-copy p {
+  margin: 0 0 12px;
+  color: #43244c;
+  line-height: 1.55;
+}
+.fab-home-story-copy .fab-home-story-place {
+  margin: 0;
+  color: #755626;
+}
+.fab-home-story-copy a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  margin-top: auto;
+  color: #542965;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 640px) {
+  .fab-home-stories-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
