@@ -2871,3 +2871,25 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 .fab-mitzvah-story-review figcaption {
   font-weight: 600;
 }
+
+.fab-mitzvah-story-photo {
+  position: relative;
+  float: right;
+  width: min(44%, 300px);
+  margin: 0 0 16px 24px;
+}
+.fab-mitzvah-story-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.fab-mitzvah-story-review {
+  clear: both;
+}
+@media (max-width: 660px) {
+  .fab-mitzvah-story-photo {
+    float: none;
+    width: 100%;
+    margin: 0 0 18px;
+  }
+}
