@@ -2792,3 +2792,48 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
   .fab-site-nav > :nth-child(5) { grid-column: span 3; }
   .fab-site-nav > :last-child { grid-column: 1 / -1; }
 }
+
+.fab-contact-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 16px 20px;
+}
+.fab-contact-quick-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 18px;
+  border: 1px solid #673578;
+  border-radius: 8px;
+  color: #542965;
+  background: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.fab-contact-quick-links a:first-child,
+.fab-contact-quick-links a:hover {
+  color: #fff;
+  background: #542965;
+}
+.fab-contact-quick-links a:focus-visible {
+  outline: 2px solid #542965;
+  outline-offset: 3px;
+}
+@media (max-width: 540px) {
+  .fab-contact-quick-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 400px;
+    margin-inline: auto;
+  }
+  .fab-contact-quick-links a {
+    padding-inline: 6px;
+  }
+  .fab-contact-quick-links a:first-child {
+    grid-column: 1 / -1;
+  }
+}
