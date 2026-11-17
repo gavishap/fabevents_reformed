@@ -2928,3 +2928,43 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
     margin: 0 0 18px;
   }
 }
+
+.fab-mitzvah-finale {
+  width: min(100%, 760px);
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 44px);
+  text-align: center;
+  background: #492357;
+  color: #fff9ee;
+  border: 1px solid #d8b66a;
+  border-radius: 14px;
+}
+.fab-mitzvah-finale p {
+  color: inherit;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  margin: 0 0 16px;
+}
+.fab-mitzvah-finale .fab-mitzvah-finale-feature {
+  color: #ffe09a;
+  font: 600 clamp(1.65rem, 4vw, 2.5rem)/1.2 "Cormorant Garamond", Georgia, serif;
+  text-wrap: balance;
+}
+.fab-mitzvah-finale a {
+  display: inline-grid;
+  place-items: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #392044;
+  background: #ffe09a;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.fab-mitzvah-finale a:hover {
+  text-decoration: underline;
+}
+.fab-mitzvah-finale a:focus-visible {
+  outline: 2px solid #fff9ee;
+  outline-offset: 3px;
+}
