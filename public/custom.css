@@ -2947,7 +2947,7 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 }
 .fab-mitzvah-finale .fab-mitzvah-finale-feature {
   color: #ffe09a;
-  font: 600 clamp(1.65rem, 4vw, 2.5rem)/1.2 "Cormorant Garamond", Georgia, serif;
+  font: 600 clamp(1.65rem, 4vw, 2.5rem)/1.2 "Cormorant Garamond", Georgia, serif !important;
   text-wrap: balance;
 }
 .fab-mitzvah-finale a {
