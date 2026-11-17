@@ -3040,3 +3040,20 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.fab-hero-overseas-link {
+  display: table;
+  margin: 8px auto 0;
+  padding: 10px 14px;
+  min-height: 44px;
+  border-radius: 8px;
+  background: #fff9ee;
+  color: #542965 !important;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#planning-from-abroad {
+  scroll-margin-top: 120px;
+}
