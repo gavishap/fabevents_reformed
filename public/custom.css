@@ -2864,9 +2864,44 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
   padding: 18px 0 0;
   border-top: 1px solid #dbc58c;
 }
+.fab-mitzvah-story-review {
+  display: grid;
+  grid-template-columns: minmax(0, 150px) minmax(0, 1fr);
+  gap: 12px 24px;
+  align-items: start;
+}
+.fab-mitzvah-story-review h3 {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+.fab-mitzvah-review-portrait {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
 .fab-mitzvah-story-review blockquote {
-  margin: 12px 0;
+  margin: 0;
   color: inherit;
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", Georgia, serif;
+  font-size: clamp(1.125rem, 2.2vw, 1.25rem);
+  font-style: normal;
+  line-height: 1.65;
+}
+.fab-mitzvah-story-review figcaption {
+  grid-column: 2;
+}
+@media (max-width: 660px) {
+  .fab-mitzvah-story-review {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .fab-mitzvah-review-portrait {
+    justify-self: center;
+  }
+  .fab-mitzvah-story-review figcaption {
+    grid-column: 1;
+  }
 }
 .fab-mitzvah-story-review figcaption {
   font-weight: 600;
