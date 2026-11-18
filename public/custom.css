@@ -3041,27 +3041,48 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
   }
 }
 
+.page-id-13 .fab-refined-hero .fab-hero-brand {
+  max-width: 100% !important;
+  max-height: 245px !important;
+}
+.page-id-13 .fab-refined-hero .fab-hero-copy .fab-hero-name {
+  font-size: clamp(50px, 7vw, 100px) !important;
+  font-weight: 700 !important;
+  color: #43204f !important;
+}
+.page-id-13 .fab-hero-copy > .fab-document-button {
+  width: fit-content;
+  max-width: 100%;
+  min-height: 44px;
+  margin: 14px auto 0 !important;
+  padding: 9px 18px;
+}
 .fab-hero-overseas-link {
   display: table;
-  margin: 10px auto 0;
-  padding: 10px 20px;
+  margin: 8px auto 0;
+  padding: 9px 14px;
   min-height: 44px;
-  border: 2px solid #542965;
+  border: 1px solid #795d83;
   border-radius: 8px;
-  background: #ffe09a;
+  background: #fff9ee;
   color: #43204f !important;
-  font-size: 1rem;
-  font-weight: 750;
+  font-size: 0.9375rem;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0 2px 0 #542965;
 }
 .fab-hero-overseas-link:hover {
-  background: #ffebba;
+  background: #f5ebf4;
 }
 .fab-hero-overseas-link:focus-visible {
   outline: 2px solid #fff9ee;
   outline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .page-id-13 .fab-refined-hero .fab-hero-brand {
+    max-width: min(100%, 350px) !important;
+    max-height: 190px !important;
+  }
 }
 #planning-from-abroad {
   scroll-margin-top: 120px;
