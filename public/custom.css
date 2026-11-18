@@ -3090,11 +3090,14 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 
 .fab-hero-planning-actions {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 8px 12px;
   margin-top: 14px;
+}
+.fab-hero-planning-actions > a {
+  min-width: 0;
+  white-space: normal;
 }
 @media (max-width: 767px) {
   .fab-hero-planning-actions {
