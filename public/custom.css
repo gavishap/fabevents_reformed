@@ -3051,8 +3051,8 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
   color: #43204f !important;
 }
 .page-id-13 .fab-hero-copy > .fab-document-button {
-  width: fit-content;
-  max-width: 100%;
+  width: fit-content !important;
+  max-width: min(100%, 230px) !important;
   min-height: 44px;
   margin: 14px auto 0 !important;
   padding: 9px 18px;
