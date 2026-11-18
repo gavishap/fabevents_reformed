@@ -3050,16 +3050,16 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
   font-weight: 700 !important;
   color: #43204f !important;
 }
-.page-id-13 .fab-hero-copy > .fab-document-button {
+.page-id-13 .fab-hero-planning-actions > .fab-document-button {
   width: fit-content !important;
   max-width: min(100%, 230px) !important;
   min-height: 44px;
-  margin: 14px auto 0 !important;
+  margin: 0 !important;
   padding: 9px 18px;
 }
 .fab-hero-overseas-link {
   display: table;
-  margin: 8px auto 0;
+  margin: 0;
   padding: 9px 14px;
   min-height: 44px;
   border: 1px solid #795d83;
@@ -3086,4 +3086,18 @@ svg.e-fas-map-marker-alt,svg.e-far-envelope,svg.e-fas-envelope-open,svg.e-fas-ph
 }
 #planning-from-abroad {
   scroll-margin-top: 120px;
+}
+
+.fab-hero-planning-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 12px;
+  margin-top: 14px;
+}
+@media (max-width: 767px) {
+  .fab-hero-planning-actions {
+    flex-direction: column;
+  }
 }
